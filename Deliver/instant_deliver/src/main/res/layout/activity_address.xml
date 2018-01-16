@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.instant_deliver.addressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/deepskyblue">
+
+        <com.example.instant_deliver.identifyView.Topbar
+            android:id="@+id/updateSingnature_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:leftTextBackground="@drawable/ic_keyboard_arrow_left_white_36dp"
+            app:title="我的地址"
+            app:titleColor="#ffffffff"
+            app:titleTextsize="9dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/addressList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#a47c7979" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/addAdresses"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_add_circle_outline_blue_700_24dp"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="新增地址"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

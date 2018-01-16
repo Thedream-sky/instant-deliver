@@ -1,0 +1,378 @@
+[
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\searching.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\searching.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\more_personal.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\more_personal.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_login_sel.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\bg_login_sel.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\login_btn_red.9.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\login_btn_red.9.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\login_button_skin.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\login_button_skin.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_wifi_disable.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_wifi_disable.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_tap.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_ok_bg_tap.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_cancel_bg_selector.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\logotitle.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\logotitle.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\login_btn_yellow.9.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\login_btn_yellow.9.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_dialog_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_dialog_bg.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\pulltorefresh\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\weixin_login_skin.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\weixin_login_skin.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_input_del_press.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\ic_input_del_press.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\route_icon_input_add.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\route_icon_input_add.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_ok_bg_selector.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_close_bg_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_close_bg_selector.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_focused.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_ok_bg_focused.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\edit_bg.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_normal.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_ok_bg_normal.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\weixin_login_normal.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\weixin_login_normal.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\qq_login_pressed.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\qq_login_pressed.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\weibo_login_pressed.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\weibo_login_pressed.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\b_poi.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\b_poi.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_advertisement_wall_btn_press.9.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\ic_advertisement_wall_btn_press.9.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\qq_login_normal.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\qq_login_normal.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\weibo_login_normal.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\weibo_login_normal.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_password_eye.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\input_password_invisible.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\input_password_invisible.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\weixin_login_pressed.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\weixin_login_pressed.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\login_unchoice_bg.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\login_unchoice_bg.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_normal.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_cancel_bg_normal.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_advertisement_wall_btn.9.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\ic_advertisement_wall_btn.9.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\cat.jpg",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\cat.jpg"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_tap.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_cancel_bg_tap.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\pulltorefresh\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\background_tab.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.astuetz\\pagerslidingtabstrip\\1.0.1\\res\\drawable\\background_tab.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_focused.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_cancel_bg_focused.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\input_password_visible.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\input_password_visible.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\kk.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\kk.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_check_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_check_selector.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\qq_login_skin.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\qq_login_skin.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_delwords.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\icon_delwords.png"
+    }
+]

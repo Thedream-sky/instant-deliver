@@ -1,0 +1,330 @@
+[
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_put.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_put.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\ordersitem.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\ordersitem.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bind.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_bind.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_deliver.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\fragment_deliver.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_regist.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_regist.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_other.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\fragment_other.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_unbind.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_unbind.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_updateuser.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_updateuser.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_own.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\fragment_own.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\pulltorefresh\\unspecified\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_address.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_address.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_eat.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\fragment_eat.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_find_back.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_find_back.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\addressitem.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\addressitem.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_message.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\fragment_message.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\school_item.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\school_item.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_get_location.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_get_location.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_update_singnature.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_update_singnature.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_show_address.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_show_address.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\pulltorefresh\\unspecified\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\bmob_update_dialog.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\layout\\bmob_update_dialog.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bindphone.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_bindphone.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contant.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\fragment_contant.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_location.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_location.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\update_head_popwindow.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\update_head_popwindow.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    }
+]

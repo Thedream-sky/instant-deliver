@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\password.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\mipmap-hdpi\\password.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\phone.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\mipmap-hdpi\\phone.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\clear2.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\mipmap-hdpi\\clear2.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\cleartext.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\mipmap-hdpi\\cleartext.png"
+    }
+]

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="ucrop-1.4.1">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/com.yalantis/ucrop/1.4.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/build/intermediates/exploded-aar/com.yalantis/ucrop/1.4.1/res" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/com.yalantis/ucrop/1.4.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yalantis/ucrop/1.4.1/23a061d14e7c5e4dda3be8c3516f00020981a3c8/ucrop-1.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

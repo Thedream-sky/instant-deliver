@@ -43,6 +43,10 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     /**
+     * 剪切图片第三方ucorp
+     */
+    compile 'com.yalantis:ucrop:1.4.1'
+    /**
      *
      */
     /**

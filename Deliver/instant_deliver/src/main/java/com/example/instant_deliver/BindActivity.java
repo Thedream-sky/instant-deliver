@@ -16,6 +16,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.view.Gravity;
@@ -32,6 +33,8 @@ import android.widget.Toast;
 import com.example.instant_deliver.beans.Users;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.getConnState;
+import com.yalantis.ucrop.UCrop;
+import com.yalantis.ucrop.UCropActivity;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -49,8 +52,8 @@ public class BindActivity extends Activity implements View.OnClickListener {
     private static final int PHOTO_REQUEST_GALLERY = 222;// 从相册中选择
     private static final int PHOTO_REQUEST_CUT = 333;// 结果
     private static final int DIALOG_CREATE= 444; //创建上传头像提示弹窗
-    //用于保存图片地址
-    private Uri imgUri=null;
+    //保存截屏uri
+    private Uri imgUri;
     //popwindow弹窗
     private PopupWindow popupWindow;
     //导航栏
@@ -204,9 +207,8 @@ public class BindActivity extends Activity implements View.OnClickListener {
             if (data != null) {
                 // 得到图片的全路径
                 Uri uri = data.getData();
-                Log.i("kk",uri.toString());
+                //Log.i("kk",uri.toString());
                 uri = geturi(data,BindActivity.this);
-                Log.i("lll",uri.toString());
                 crop(uri);
             }
 
@@ -236,8 +238,10 @@ public class BindActivity extends Activity implements View.OnClickListener {
             setResult(4, intent);
 
             Uri uri = null;
-            // 从剪切图片返回的数据
-            /** 适配不同机型返回uri */
+           /**
+            * 调用系统剪切库会出现各种问题，使用第三方解决此问题
+            *  // 从剪切图片返回的数据
+            // 适配不同机型返回uri
             if (data != null) {
                 //有的机型无法直接获取图片地址
                 uri = data.getData();
@@ -246,25 +250,31 @@ public class BindActivity extends Activity implements View.OnClickListener {
                 }
             }else {
                 uri = imgUri;
-            }
-            /**
-             *Bitmap bitmap = data.getParcelableExtra("data");
-             *在onActivityResult中通过data.getParcelableExtra("data")来获取数据容易出错， 剪切输出的值不能太大
-             * 建议根据uri来获取bitmip
-             */
-            Bitmap myBitmap = null;
-            myBitmap =getBitmapFromUri(uri);
-            if (myBitmap != null) {
-                //判断网络状态
-                if (getConnState.isConn(BindActivity.this)) {
-                    //保存头像
-                    saveImage(myBitmap);
-                    //上传图像
-                    Message message = new Message();
-                    message.obj = myBitmap;
-                    handler.sendMessageDelayed(message, 500);
-                } else {
-                    Toast.makeText(BindActivity.this, "当前网络不可用", Toast.LENGTH_SHORT).show();
+            }*/
+            if(data != null){
+                uri = UCrop.getOutput(data);
+                if(uri == null){
+                    uri = imgUri;
+                }
+                /**
+                 *Bitmap bitmap = data.getParcelableExtra("data");
+                 *在onActivityResult中通过data.getParcelableExtra("data")来获取数据容易出错， 剪切输出的值不能太大
+                 * 建议根据uri来获取bitmip
+                 */
+                Bitmap myBitmap = null;
+                myBitmap =getBitmapFromUri(uri);
+                if (myBitmap != null) {
+                    //判断网络状态
+                    if (getConnState.isConn(BindActivity.this)) {
+                        //保存头像
+                        saveImage(myBitmap);
+                        //上传图像
+                        Message message = new Message();
+                        message.obj = myBitmap;
+                        handler.sendMessageDelayed(message, 500);
+                    } else {
+                        Toast.makeText(BindActivity.this, "当前网络不可用", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
 
@@ -456,15 +466,15 @@ public class BindActivity extends Activity implements View.OnClickListener {
      * 剪切图片
      */
     private void crop(Uri uri) {
-        Log.i("mm","剪切"+uri.toString());
+       /* Log.i("mm","剪切"+uri.toString());
         // 裁剪图片意图
         Intent intent = new Intent("com.android.camera.action.CROP");
-        /** 安卓7.0以及以上给予读写权限 */
+        *//** 安卓7.0以及以上给予读写权限 *//*
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             intent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
         }
-        intent.setDataAndType(uri, "image/*");
+        intent.setDataAndType(uri, "image*//*");
         intent.putExtra("crop", "true");
         // 裁剪框的比例，1：1
         intent.putExtra("aspectX", 1);
@@ -474,14 +484,32 @@ public class BindActivity extends Activity implements View.OnClickListener {
         intent.putExtra("outputY", 250);
         //路径
         intent.putExtra(MediaStore.EXTRA_OUTPUT,uri);
-        /**返回值为空的时候会用到*/
+        *//**返回值为空的时候会用到*//*
         imgUri = uri;
         intent.putExtra("outputFormat", "JPEG");// 图片格式
         intent.putExtra("noFaceDetection", true);// 取消人脸识别
         //设置为返回数据
         intent.putExtra("return-data", false);
         // 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_CUT
-        startActivityForResult(intent, PHOTO_REQUEST_CUT);
+        startActivityForResult(intent, PHOTO_REQUEST_CUT);*/
+        /**返回值为空的时候会用到*/
+        imgUri = uri;
+        //裁剪后保存到文件中
+        Uri destinationUri = Uri.fromFile(new File(getCacheDir(), "instant_deliver"));
+        UCrop uCrop = UCrop.of(uri, destinationUri);
+        UCrop.Options options = new UCrop.Options();
+        //设置裁剪图片可操作的手势
+        options.setAllowedGestures(UCropActivity.SCALE, UCropActivity.ROTATE, UCropActivity.ALL);
+        //设置隐藏底部容器，默认显示
+        // options.setHideBottomControls(true);
+        //设置toolbar颜色
+        options.setToolbarColor(ActivityCompat.getColor(this, R.color.colorPrimary));
+        //设置状态栏颜色
+        options.setStatusBarColor(ActivityCompat.getColor(this, R.color.colorPrimary));
+        //是否能调整裁剪框
+//        options.setFreeStyleCropEnabled(true);
+        uCrop.withOptions(options);
+        uCrop.start(this,PHOTO_REQUEST_CUT);
     }
 
 

@@ -29,6 +29,8 @@ public final class R {
         public static final int slide_in_from_top=0x7f050011;
         public static final int slide_out_to_bottom=0x7f050012;
         public static final int slide_out_to_top=0x7f050013;
+        public static final int ucrop_loader_circle_path=0x7f050014;
+        public static final int ucrop_loader_circle_scale=0x7f050015;
     }
     public static final class animator {
         public static final int design_appbar_state_list_animator=0x7f060000;
@@ -2610,6 +2612,141 @@ containing a value of this type.
 </table>
          */
         public static final int trackTintMode=0x7f01012e;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_artv_ratio_title=0x7f01016f;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_artv_ratio_x=0x7f010170;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_artv_ratio_y=0x7f010171;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_aspect_ratio_x=0x7f010172;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_aspect_ratio_y=0x7f010173;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_dimmed_color=0x7f010176;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_frame_color=0x7f01017d;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_frame_stroke_size=0x7f01017c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_grid_color=0x7f010178;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_grid_column_count=0x7f01017a;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_grid_row_count=0x7f010179;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_grid_stroke_size=0x7f010177;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_oval_dimmed_layer=0x7f010175;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_show_frame=0x7f01017e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_show_grid=0x7f01017b;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int ucrop_show_oval_crop_frame=0x7f010174;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -2741,31 +2878,31 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0b0004;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f0d00fa;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f0d00fb;
-        public static final int abc_btn_colored_borderless_text_material=0x7f0d00fc;
-        public static final int abc_btn_colored_text_material=0x7f0d00fd;
-        public static final int abc_color_highlight_material=0x7f0d00fe;
-        public static final int abc_hint_foreground_material_dark=0x7f0d00ff;
-        public static final int abc_hint_foreground_material_light=0x7f0d0100;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f0d0107;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f0d0108;
+        public static final int abc_btn_colored_borderless_text_material=0x7f0d0109;
+        public static final int abc_btn_colored_text_material=0x7f0d010a;
+        public static final int abc_color_highlight_material=0x7f0d010b;
+        public static final int abc_hint_foreground_material_dark=0x7f0d010c;
+        public static final int abc_hint_foreground_material_light=0x7f0d010d;
         public static final int abc_input_method_navigation_guard=0x7f0d0001;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f0d0101;
-        public static final int abc_primary_text_disable_only_material_light=0x7f0d0102;
-        public static final int abc_primary_text_material_dark=0x7f0d0103;
-        public static final int abc_primary_text_material_light=0x7f0d0104;
-        public static final int abc_search_url_text=0x7f0d0105;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f0d010e;
+        public static final int abc_primary_text_disable_only_material_light=0x7f0d010f;
+        public static final int abc_primary_text_material_dark=0x7f0d0110;
+        public static final int abc_primary_text_material_light=0x7f0d0111;
+        public static final int abc_search_url_text=0x7f0d0112;
         public static final int abc_search_url_text_normal=0x7f0d0002;
         public static final int abc_search_url_text_pressed=0x7f0d0003;
         public static final int abc_search_url_text_selected=0x7f0d0004;
-        public static final int abc_secondary_text_material_dark=0x7f0d0106;
-        public static final int abc_secondary_text_material_light=0x7f0d0107;
-        public static final int abc_tint_btn_checkable=0x7f0d0108;
-        public static final int abc_tint_default=0x7f0d0109;
-        public static final int abc_tint_edittext=0x7f0d010a;
-        public static final int abc_tint_seek_thumb=0x7f0d010b;
-        public static final int abc_tint_spinner=0x7f0d010c;
-        public static final int abc_tint_switch_thumb=0x7f0d010d;
-        public static final int abc_tint_switch_track=0x7f0d010e;
+        public static final int abc_secondary_text_material_dark=0x7f0d0113;
+        public static final int abc_secondary_text_material_light=0x7f0d0114;
+        public static final int abc_tint_btn_checkable=0x7f0d0115;
+        public static final int abc_tint_default=0x7f0d0116;
+        public static final int abc_tint_edittext=0x7f0d0117;
+        public static final int abc_tint_seek_thumb=0x7f0d0118;
+        public static final int abc_tint_spinner=0x7f0d0119;
+        public static final int abc_tint_switch_thumb=0x7f0d011a;
+        public static final int abc_tint_switch_track=0x7f0d011b;
         public static final int accent_material_dark=0x7f0d0005;
         public static final int accent_material_light=0x7f0d0006;
         public static final int aliceblue=0x7f0d0007;
@@ -2810,22 +2947,22 @@ containing a value of this type.
         public static final int colorPrimary=0x7f0d002e;
         public static final int colorPrimaryDark=0x7f0d002f;
         public static final int common_action_bar_splitter=0x7f0d0030;
-        public static final int common_google_signin_btn_text_dark=0x7f0d010f;
+        public static final int common_google_signin_btn_text_dark=0x7f0d011c;
         public static final int common_google_signin_btn_text_dark_default=0x7f0d0031;
         public static final int common_google_signin_btn_text_dark_disabled=0x7f0d0032;
         public static final int common_google_signin_btn_text_dark_focused=0x7f0d0033;
         public static final int common_google_signin_btn_text_dark_pressed=0x7f0d0034;
-        public static final int common_google_signin_btn_text_light=0x7f0d0110;
+        public static final int common_google_signin_btn_text_light=0x7f0d011d;
         public static final int common_google_signin_btn_text_light_default=0x7f0d0035;
         public static final int common_google_signin_btn_text_light_disabled=0x7f0d0036;
         public static final int common_google_signin_btn_text_light_focused=0x7f0d0037;
         public static final int common_google_signin_btn_text_light_pressed=0x7f0d0038;
-        public static final int common_plus_signin_btn_text_dark=0x7f0d0111;
+        public static final int common_plus_signin_btn_text_dark=0x7f0d011e;
         public static final int common_plus_signin_btn_text_dark_default=0x7f0d0039;
         public static final int common_plus_signin_btn_text_dark_disabled=0x7f0d003a;
         public static final int common_plus_signin_btn_text_dark_focused=0x7f0d003b;
         public static final int common_plus_signin_btn_text_dark_pressed=0x7f0d003c;
-        public static final int common_plus_signin_btn_text_light=0x7f0d0112;
+        public static final int common_plus_signin_btn_text_light=0x7f0d011f;
         public static final int common_plus_signin_btn_text_light_default=0x7f0d003d;
         public static final int common_plus_signin_btn_text_light_disabled=0x7f0d003e;
         public static final int common_plus_signin_btn_text_light_focused=0x7f0d003f;
@@ -2856,7 +2993,7 @@ containing a value of this type.
         public static final int deeppink=0x7f0d0058;
         public static final int deepskyblue=0x7f0d0059;
         public static final int design_bottom_navigation_shadow_color=0x7f0d005a;
-        public static final int design_error=0x7f0d0113;
+        public static final int design_error=0x7f0d0120;
         public static final int design_fab_shadow_end_color=0x7f0d005b;
         public static final int design_fab_shadow_mid_color=0x7f0d005c;
         public static final int design_fab_shadow_start_color=0x7f0d005d;
@@ -2867,7 +3004,7 @@ containing a value of this type.
         public static final int design_snackbar_background_color=0x7f0d0062;
         public static final int design_textinput_error_color_dark=0x7f0d0063;
         public static final int design_textinput_error_color_light=0x7f0d0064;
-        public static final int design_tint_password_toggle=0x7f0d0114;
+        public static final int design_tint_password_toggle=0x7f0d0121;
         public static final int dim_foreground_disabled_material_dark=0x7f0d0065;
         public static final int dim_foreground_disabled_material_light=0x7f0d0066;
         public static final int dim_foreground_material_dark=0x7f0d0067;
@@ -3001,8 +3138,8 @@ containing a value of this type.
         public static final int steelblue=0x7f0d00e6;
         public static final int switch_thumb_disabled_material_dark=0x7f0d00e7;
         public static final int switch_thumb_disabled_material_light=0x7f0d00e8;
-        public static final int switch_thumb_material_dark=0x7f0d0115;
-        public static final int switch_thumb_material_light=0x7f0d0116;
+        public static final int switch_thumb_material_dark=0x7f0d0122;
+        public static final int switch_thumb_material_light=0x7f0d0123;
         public static final int switch_thumb_normal_material_dark=0x7f0d00e9;
         public static final int switch_thumb_normal_material_light=0x7f0d00ea;
         public static final int tan=0x7f0d00eb;
@@ -3014,12 +3151,26 @@ containing a value of this type.
         public static final int thistle=0x7f0d00f1;
         public static final int tomato=0x7f0d00f2;
         public static final int turquoise=0x7f0d00f3;
-        public static final int violet=0x7f0d00f4;
-        public static final int warn=0x7f0d00f5;
-        public static final int wheat=0x7f0d00f6;
-        public static final int white=0x7f0d00f7;
-        public static final int whitesmoke=0x7f0d00f8;
-        public static final int yellow=0x7f0d00f9;
+        public static final int ucrop_color_crop_background=0x7f0d00f4;
+        public static final int ucrop_color_default_crop_frame=0x7f0d00f5;
+        public static final int ucrop_color_default_crop_grid=0x7f0d00f6;
+        public static final int ucrop_color_default_dimmed=0x7f0d00f7;
+        public static final int ucrop_color_default_logo=0x7f0d00f8;
+        public static final int ucrop_color_progress_wheel_line=0x7f0d00f9;
+        public static final int ucrop_color_statusbar=0x7f0d00fa;
+        public static final int ucrop_color_toolbar=0x7f0d00fb;
+        public static final int ucrop_color_toolbar_widget=0x7f0d00fc;
+        public static final int ucrop_color_widget=0x7f0d00fd;
+        public static final int ucrop_color_widget_active=0x7f0d00fe;
+        public static final int ucrop_color_widget_background=0x7f0d00ff;
+        public static final int ucrop_color_widget_text=0x7f0d0100;
+        public static final int ucrop_scale_text_view_selector=0x7f0d0124;
+        public static final int violet=0x7f0d0101;
+        public static final int warn=0x7f0d0102;
+        public static final int wheat=0x7f0d0103;
+        public static final int white=0x7f0d0104;
+        public static final int whitesmoke=0x7f0d0105;
+        public static final int yellow=0x7f0d0106;
     }
     public static final class dimen {
         public static final int abc_action_bar_content_inset_material=0x7f09000c;
@@ -3171,6 +3322,21 @@ containing a value of this type.
         public static final int notification_subtext_size=0x7f090092;
         public static final int notification_top_pad=0x7f090093;
         public static final int notification_top_pad_large_text=0x7f090094;
+        public static final int ucrop_default_crop_frame_stoke_width=0x7f090095;
+        public static final int ucrop_default_crop_grid_stoke_width=0x7f090096;
+        public static final int ucrop_height_crop_aspect_ratio_text=0x7f090097;
+        public static final int ucrop_height_divider_shadow=0x7f090098;
+        public static final int ucrop_height_horizontal_wheel_progress_line=0x7f090099;
+        public static final int ucrop_height_wrapper_controls=0x7f09009a;
+        public static final int ucrop_height_wrapper_states=0x7f09009b;
+        public static final int ucrop_margin_horizontal_wheel_progress_line=0x7f09009c;
+        public static final int ucrop_margit_top_widget_text=0x7f09009d;
+        public static final int ucrop_padding_crop_frame=0x7f09009e;
+        public static final int ucrop_progress_size=0x7f09009f;
+        public static final int ucrop_size_dot_scale_text_view=0x7f0900a0;
+        public static final int ucrop_size_wrapper_rotate_button=0x7f0900a1;
+        public static final int ucrop_text_size_widget_text=0x7f0900a2;
+        public static final int ucrop_width_horizontal_wheel_progress_line=0x7f0900a3;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -3257,13 +3423,13 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
         public static final int avd_hide_password=0x7f020053;
-        public static final int avd_hide_password_1=0x7f0200fb;
-        public static final int avd_hide_password_2=0x7f0200fc;
-        public static final int avd_hide_password_3=0x7f0200fd;
+        public static final int avd_hide_password_1=0x7f020107;
+        public static final int avd_hide_password_2=0x7f020108;
+        public static final int avd_hide_password_3=0x7f020109;
         public static final int avd_show_password=0x7f020054;
-        public static final int avd_show_password_1=0x7f0200fe;
-        public static final int avd_show_password_2=0x7f0200ff;
-        public static final int avd_show_password_3=0x7f020100;
+        public static final int avd_show_password_1=0x7f02010a;
+        public static final int avd_show_password_2=0x7f02010b;
+        public static final int avd_show_password_3=0x7f02010c;
         public static final int b_poi=0x7f020055;
         public static final int background_tab=0x7f020056;
         public static final int bg_login_sel=0x7f020057;
@@ -3415,8 +3581,8 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f0200e9;
         public static final int notification_bg_normal_pressed=0x7f0200ea;
         public static final int notification_icon_background=0x7f0200eb;
-        public static final int notification_template_icon_bg=0x7f0200f9;
-        public static final int notification_template_icon_low_bg=0x7f0200fa;
+        public static final int notification_template_icon_bg=0x7f020105;
+        public static final int notification_template_icon_low_bg=0x7f020106;
         public static final int notification_tile_bg=0x7f0200ec;
         public static final int notify_panel_notification_icon_bg=0x7f0200ed;
         public static final int qq_login_normal=0x7f0200ee;
@@ -3424,12 +3590,24 @@ containing a value of this type.
         public static final int qq_login_skin=0x7f0200f0;
         public static final int route_icon_input_add=0x7f0200f1;
         public static final int searching=0x7f0200f2;
-        public static final int weibo_login_normal=0x7f0200f3;
-        public static final int weibo_login_pressed=0x7f0200f4;
-        public static final int weibo_login_skin=0x7f0200f5;
-        public static final int weixin_login_normal=0x7f0200f6;
-        public static final int weixin_login_pressed=0x7f0200f7;
-        public static final int weixin_login_skin=0x7f0200f8;
+        public static final int ucrop_ic_angle=0x7f0200f3;
+        public static final int ucrop_ic_crop=0x7f0200f4;
+        public static final int ucrop_ic_cross=0x7f0200f5;
+        public static final int ucrop_ic_done=0x7f0200f6;
+        public static final int ucrop_ic_next=0x7f0200f7;
+        public static final int ucrop_ic_reset=0x7f0200f8;
+        public static final int ucrop_ic_rotate=0x7f0200f9;
+        public static final int ucrop_ic_scale=0x7f0200fa;
+        public static final int ucrop_shadow_upside=0x7f0200fb;
+        public static final int ucrop_vector_ic_crop=0x7f0200fc;
+        public static final int ucrop_vector_loader=0x7f0200fd;
+        public static final int ucrop_vector_loader_animated=0x7f0200fe;
+        public static final int weibo_login_normal=0x7f0200ff;
+        public static final int weibo_login_pressed=0x7f020100;
+        public static final int weibo_login_skin=0x7f020101;
+        public static final int weixin_login_normal=0x7f020102;
+        public static final int weixin_login_pressed=0x7f020103;
+        public static final int weixin_login_skin=0x7f020104;
     }
     public static final class id {
         public static final int action0=0x7f0e0115;
@@ -3519,6 +3697,11 @@ containing a value of this type.
         public static final int contactText=0x7f0e00bd;
         public static final int contentPanel=0x7f0e0061;
         public static final int counter=0x7f0e00aa;
+        public static final int crop_aspect_ratio_16_9=0x7f0e014b;
+        public static final int crop_aspect_ratio_1_1=0x7f0e0147;
+        public static final int crop_aspect_ratio_3_2=0x7f0e014a;
+        public static final int crop_aspect_ratio_3_4=0x7f0e0148;
+        public static final int crop_aspect_ratio_original=0x7f0e0149;
         public static final int custom=0x7f0e0068;
         public static final int customPanel=0x7f0e0067;
         public static final int dark=0x7f0e0050;
@@ -3573,10 +3756,18 @@ containing a value of this type.
         public static final int icon_only=0x7f0e004d;
         public static final int ifRoom=0x7f0e0041;
         public static final int image=0x7f0e0059;
-        public static final int imagestore=0x7f0e0136;
+        public static final int image_view_crop=0x7f0e0152;
+        public static final int image_view_logo=0x7f0e013b;
+        public static final int image_view_state_aspect_ratio=0x7f0e0144;
+        public static final int image_view_state_rotate=0x7f0e0146;
+        public static final int image_view_state_scale=0x7f0e0142;
+        public static final int imagestore=0x7f0e0154;
         public static final int info=0x7f0e011f;
         public static final int item_touch_helper_previous_elevation=0x7f0e0006;
         public static final int largeLabel=0x7f0e00ed;
+        public static final int layout_aspect_ratio=0x7f0e013e;
+        public static final int layout_rotate_wheel=0x7f0e013f;
+        public static final int layout_scale_wheel=0x7f0e0140;
         public static final int left=0x7f0e002f;
         public static final int light=0x7f0e0051;
         public static final int line1=0x7f0e0124;
@@ -3585,8 +3776,10 @@ containing a value of this type.
         public static final int list_item=0x7f0e005b;
         public static final int logo=0x7f0e00a9;
         public static final int manualOnly=0x7f0e0046;
-        public static final int masked=0x7f0e0139;
+        public static final int masked=0x7f0e0157;
         public static final int media_actions=0x7f0e0118;
+        public static final int menu_crop=0x7f0e0158;
+        public static final int menu_loader=0x7f0e0159;
         public static final int messageImage=0x7f0e00b9;
         public static final int messageText=0x7f0e00ba;
         public static final int middle=0x7f0e003c;
@@ -3660,6 +3853,8 @@ containing a value of this type.
         public static final int right_icon=0x7f0e0120;
         public static final int right_side=0x7f0e011c;
         public static final int rotate=0x7f0e004c;
+        public static final int rotate_scroll_wheel=0x7f0e014d;
+        public static final int scale_scroll_wheel=0x7f0e0151;
         public static final int school_text=0x7f0e0135;
         public static final int screen=0x7f0e0023;
         public static final int scroll=0x7f0e001f;
@@ -3696,6 +3891,9 @@ containing a value of this type.
         public static final int src_over=0x7f0e0026;
         public static final int standard=0x7f0e004e;
         public static final int start=0x7f0e0031;
+        public static final int state_aspect_ratio=0x7f0e0143;
+        public static final int state_rotate=0x7f0e0145;
+        public static final int state_scale=0x7f0e0141;
         public static final int status_bar_latest_event_content=0x7f0e0117;
         public static final int submenuarrow=0x7f0e0071;
         public static final int submit_area=0x7f0e0082;
@@ -3706,13 +3904,17 @@ containing a value of this type.
         public static final int textSpacerNoButtons=0x7f0e0065;
         public static final int textSpacerNoTitle=0x7f0e0064;
         public static final int text_input_password_toggle=0x7f0e00f7;
+        public static final int text_view_rotate=0x7f0e014c;
+        public static final int text_view_scale=0x7f0e0150;
         public static final int textinput_counter=0x7f0e000b;
         public static final int textinput_error=0x7f0e000c;
         public static final int time=0x7f0e011d;
         public static final int title=0x7f0e005d;
         public static final int titleDividerNoCustom=0x7f0e006c;
         public static final int title_template=0x7f0e006a;
-        public static final int tookphoto=0x7f0e0137;
+        public static final int tookphoto=0x7f0e0155;
+        public static final int toolbar=0x7f0e0137;
+        public static final int toolbar_title=0x7f0e0138;
         public static final int top=0x7f0e0032;
         public static final int topPanel=0x7f0e0069;
         public static final int toparea=0x7f0e00a8;
@@ -3723,6 +3925,9 @@ containing a value of this type.
         public static final int transition_current_scene=0x7f0e000d;
         public static final int transition_scene_layoutid_cache=0x7f0e000e;
         public static final int typeSpinner=0x7f0e00c2;
+        public static final int ucrop=0x7f0e013c;
+        public static final int ucrop_frame=0x7f0e0139;
+        public static final int ucrop_photobox=0x7f0e0136;
         public static final int unbindphone_code=0x7f0e00d9;
         public static final int unbindphone_ensure=0x7f0e00da;
         public static final int unbindphone_getcode=0x7f0e00d8;
@@ -3739,13 +3944,18 @@ containing a value of this type.
         public static final int useLogo=0x7f0e001b;
         public static final int usn=0x7f0e00e3;
         public static final int view_offset_helper=0x7f0e0010;
-        public static final int visible=0x7f0e0138;
+        public static final int view_overlay=0x7f0e0153;
+        public static final int visible=0x7f0e0156;
         public static final int webview=0x7f0e0011;
         public static final int weiboLogin=0x7f0e00b4;
         public static final int weixinLogin=0x7f0e00b5;
         public static final int wide=0x7f0e004f;
         public static final int withText=0x7f0e0043;
         public static final int wrap_content=0x7f0e0027;
+        public static final int wrapper_controls=0x7f0e013a;
+        public static final int wrapper_reset_rotate=0x7f0e014e;
+        public static final int wrapper_rotate_by_angle=0x7f0e014f;
+        public static final int wrapper_states=0x7f0e013d;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0c0001;
@@ -3758,6 +3968,7 @@ containing a value of this type.
         public static final int hide_password_duration=0x7f0c0007;
         public static final int show_password_duration=0x7f0c0008;
         public static final int status_bar_notification_info_maxnum=0x7f0c0009;
+        public static final int ucrop_progress_loading_anim_time=0x7f0c000a;
     }
     public static final class layout {
         public static final int abc_action_bar_title_item=0x7f040000;
@@ -3847,7 +4058,16 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f040054;
         public static final int select_dialog_singlechoice_material=0x7f040055;
         public static final int support_simple_spinner_dropdown_item=0x7f040056;
-        public static final int update_head_popwindow=0x7f040057;
+        public static final int ucrop_activity_photobox=0x7f040057;
+        public static final int ucrop_controls=0x7f040058;
+        public static final int ucrop_layout_aspect_ratio=0x7f040059;
+        public static final int ucrop_layout_rotate_wheel=0x7f04005a;
+        public static final int ucrop_layout_scale_wheel=0x7f04005b;
+        public static final int ucrop_view=0x7f04005c;
+        public static final int update_head_popwindow=0x7f04005d;
+    }
+    public static final class menu {
+        public static final int ucrop_menu_activity=0x7f0f0000;
     }
     public static final class mipmap {
         public static final int clear2=0x7f030000;
@@ -3857,20 +4077,20 @@ containing a value of this type.
         public static final int phone=0x7f030004;
     }
     public static final class string {
-        public static final int BMAppUpdate=0x7f080038;
-        public static final int BMBreak_Network=0x7f080039;
-        public static final int BMDialog_InstallAPK=0x7f08003a;
-        public static final int BMGprsCondition=0x7f08003b;
-        public static final int BMIgnore=0x7f08003c;
-        public static final int BMNewVersion=0x7f08003d;
-        public static final int BMNotNow=0x7f08003e;
-        public static final int BMTargetSize=0x7f08003f;
-        public static final int BMToast_IsUpdating=0x7f080040;
-        public static final int BMUpdateCheck=0x7f080041;
-        public static final int BMUpdateContent=0x7f080042;
-        public static final int BMUpdateNow=0x7f080043;
-        public static final int BMUpdateSize=0x7f080044;
-        public static final int BMUpdateTitle=0x7f080045;
+        public static final int BMAppUpdate=0x7f08003b;
+        public static final int BMBreak_Network=0x7f08003c;
+        public static final int BMDialog_InstallAPK=0x7f08003d;
+        public static final int BMGprsCondition=0x7f08003e;
+        public static final int BMIgnore=0x7f08003f;
+        public static final int BMNewVersion=0x7f080040;
+        public static final int BMNotNow=0x7f080041;
+        public static final int BMTargetSize=0x7f080042;
+        public static final int BMToast_IsUpdating=0x7f080043;
+        public static final int BMUpdateCheck=0x7f080044;
+        public static final int BMUpdateContent=0x7f080045;
+        public static final int BMUpdateNow=0x7f080046;
+        public static final int BMUpdateSize=0x7f080047;
+        public static final int BMUpdateTitle=0x7f080048;
         public static final int abc_action_bar_home_description=0x7f080000;
         public static final int abc_action_bar_home_description_format=0x7f080001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f080002;
@@ -3881,18 +4101,18 @@ containing a value of this type.
         public static final int abc_activitychooserview_choose_application=0x7f080007;
         public static final int abc_capital_off=0x7f080008;
         public static final int abc_capital_on=0x7f080009;
-        public static final int abc_font_family_body_1_material=0x7f080046;
-        public static final int abc_font_family_body_2_material=0x7f080047;
-        public static final int abc_font_family_button_material=0x7f080048;
-        public static final int abc_font_family_caption_material=0x7f080049;
-        public static final int abc_font_family_display_1_material=0x7f08004a;
-        public static final int abc_font_family_display_2_material=0x7f08004b;
-        public static final int abc_font_family_display_3_material=0x7f08004c;
-        public static final int abc_font_family_display_4_material=0x7f08004d;
-        public static final int abc_font_family_headline_material=0x7f08004e;
-        public static final int abc_font_family_menu_material=0x7f08004f;
-        public static final int abc_font_family_subhead_material=0x7f080050;
-        public static final int abc_font_family_title_material=0x7f080051;
+        public static final int abc_font_family_body_1_material=0x7f080049;
+        public static final int abc_font_family_body_2_material=0x7f08004a;
+        public static final int abc_font_family_button_material=0x7f08004b;
+        public static final int abc_font_family_caption_material=0x7f08004c;
+        public static final int abc_font_family_display_1_material=0x7f08004d;
+        public static final int abc_font_family_display_2_material=0x7f08004e;
+        public static final int abc_font_family_display_3_material=0x7f08004f;
+        public static final int abc_font_family_display_4_material=0x7f080050;
+        public static final int abc_font_family_headline_material=0x7f080051;
+        public static final int abc_font_family_menu_material=0x7f080052;
+        public static final int abc_font_family_subhead_material=0x7f080053;
+        public static final int abc_font_family_title_material=0x7f080054;
         public static final int abc_search_hint=0x7f08000a;
         public static final int abc_searchview_description_clear=0x7f08000b;
         public static final int abc_searchview_description_query=0x7f08000c;
@@ -3902,41 +4122,41 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f080010;
         public static final int abc_shareactionprovider_share_with_application=0x7f080011;
         public static final int abc_toolbar_collapse_description=0x7f080012;
-        public static final int activatesAction=0x7f080052;
-        public static final int addFence=0x7f080053;
-        public static final int alarmCPU=0x7f080054;
-        public static final int alarmCPU_dec=0x7f080055;
-        public static final int alarmInterval=0x7f080056;
-        public static final int alertIn=0x7f080057;
-        public static final int alertOut=0x7f080058;
-        public static final int alertStated=0x7f080059;
-        public static final int app_name=0x7f08005a;
-        public static final int appbar_scrolling_view_behavior=0x7f08005b;
-        public static final int assistantLocation=0x7f08005c;
-        public static final int assistantLocationInfo=0x7f08005d;
-        public static final int assistantLocation_dec=0x7f08005e;
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f08005f;
-        public static final int auth_google_play_services_client_google_display_name=0x7f080060;
-        public static final int battery_saving=0x7f080061;
-        public static final int bmob_common_action_cancel=0x7f080062;
-        public static final int bmob_common_action_continue=0x7f080063;
-        public static final int bmob_common_action_info_exist=0x7f080064;
-        public static final int bmob_common_action_pause=0x7f080065;
-        public static final int bmob_common_download_failed=0x7f080066;
-        public static final int bmob_common_download_finish=0x7f080067;
-        public static final int bmob_common_download_notification_prefix=0x7f080068;
-        public static final int bmob_common_info_interrupt=0x7f080069;
-        public static final int bmob_common_network_break_alert=0x7f08006a;
-        public static final int bmob_common_patch_finish=0x7f08006b;
-        public static final int bmob_common_pause_notification_prefix=0x7f08006c;
-        public static final int bmob_common_silent_download_finish=0x7f08006d;
-        public static final int bmob_common_start_download_notification=0x7f08006e;
-        public static final int bmob_common_start_patch_notification=0x7f08006f;
-        public static final int bottom_sheet_behavior=0x7f080070;
-        public static final int cacheAble=0x7f080071;
-        public static final int cancel=0x7f080072;
-        public static final int character_counter_pattern=0x7f080073;
-        public static final int checkIsChina=0x7f080074;
+        public static final int activatesAction=0x7f080055;
+        public static final int addFence=0x7f080056;
+        public static final int alarmCPU=0x7f080057;
+        public static final int alarmCPU_dec=0x7f080058;
+        public static final int alarmInterval=0x7f080059;
+        public static final int alertIn=0x7f08005a;
+        public static final int alertOut=0x7f08005b;
+        public static final int alertStated=0x7f08005c;
+        public static final int app_name=0x7f08005d;
+        public static final int appbar_scrolling_view_behavior=0x7f08005e;
+        public static final int assistantLocation=0x7f08005f;
+        public static final int assistantLocationInfo=0x7f080060;
+        public static final int assistantLocation_dec=0x7f080061;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f080062;
+        public static final int auth_google_play_services_client_google_display_name=0x7f080063;
+        public static final int battery_saving=0x7f080064;
+        public static final int bmob_common_action_cancel=0x7f080065;
+        public static final int bmob_common_action_continue=0x7f080066;
+        public static final int bmob_common_action_info_exist=0x7f080067;
+        public static final int bmob_common_action_pause=0x7f080068;
+        public static final int bmob_common_download_failed=0x7f080069;
+        public static final int bmob_common_download_finish=0x7f08006a;
+        public static final int bmob_common_download_notification_prefix=0x7f08006b;
+        public static final int bmob_common_info_interrupt=0x7f08006c;
+        public static final int bmob_common_network_break_alert=0x7f08006d;
+        public static final int bmob_common_patch_finish=0x7f08006e;
+        public static final int bmob_common_pause_notification_prefix=0x7f08006f;
+        public static final int bmob_common_silent_download_finish=0x7f080070;
+        public static final int bmob_common_start_download_notification=0x7f080071;
+        public static final int bmob_common_start_patch_notification=0x7f080072;
+        public static final int bottom_sheet_behavior=0x7f080073;
+        public static final int cacheAble=0x7f080074;
+        public static final int cancel=0x7f080075;
+        public static final int character_counter_pattern=0x7f080076;
+        public static final int checkIsChina=0x7f080077;
         public static final int common_google_play_services_api_unavailable_text=0x7f080013;
         public static final int common_google_play_services_enable_button=0x7f080014;
         public static final int common_google_play_services_enable_text=0x7f080015;
@@ -3966,99 +4186,104 @@ containing a value of this type.
         public static final int common_open_on_phone=0x7f08002d;
         public static final int common_signin_button_text=0x7f08002e;
         public static final int common_signin_button_text_long=0x7f08002f;
-        public static final int coordinateConvert=0x7f080075;
-        public static final int counter=0x7f080076;
-        public static final int counter1=0x7f080077;
-        public static final int defaultHttpTimeout=0x7f080078;
-        public static final int defaultInteval=0x7f080079;
-        public static final int device_sensors=0x7f08007a;
-        public static final int districtGeoFence=0x7f08007b;
-        public static final int districtGeoFence_dec=0x7f08007c;
-        public static final int errorCode=0x7f08007d;
-        public static final int errorCodeInfo=0x7f08007e;
-        public static final int errorCode_dec=0x7f08007f;
-        public static final int fenceRadius=0x7f080080;
-        public static final int fence_district=0x7f080081;
-        public static final int fence_keyword=0x7f080082;
-        public static final int fence_nearby=0x7f080083;
-        public static final int fence_polygon=0x7f080084;
-        public static final int fence_round=0x7f080085;
-        public static final int findback=0x7f080086;
-        public static final int forget=0x7f080087;
-        public static final int geoFence=0x7f080088;
-        public static final int geoFence_dec=0x7f080089;
-        public static final int getLastLocation=0x7f08008a;
-        public static final int gpsFirst=0x7f08008b;
-        public static final int hello_blank_fragment=0x7f08008c;
-        public static final int hideList=0x7f08008d;
-        public static final int hideOption=0x7f08008e;
-        public static final int hight_accuracy=0x7f08008f;
-        public static final int httpTimeout=0x7f080090;
-        public static final int interval=0x7f080091;
-        public static final int keywordGeoFence=0x7f080092;
-        public static final int keywordGeoFence_dec=0x7f080093;
-        public static final int lastLocation=0x7f080094;
-        public static final int lastLocation_dec=0x7f080095;
-        public static final int location=0x7f080096;
-        public static final int location_dec=0x7f080097;
-        public static final int location_once=0x7f080098;
-        public static final int login=0x7f080099;
-        public static final int meter=0x7f08009a;
-        public static final int multipleGeoFence=0x7f08009b;
-        public static final int multipleGeoFence_dec=0x7f08009c;
-        public static final int nearbyGeoFence=0x7f08009d;
-        public static final int nearbyGeoFence_dec=0x7f08009e;
-        public static final int needAddress=0x7f08009f;
-        public static final int notifyMsg=0x7f0800a0;
-        public static final int notifyTitle=0x7f0800a1;
-        public static final int oldGeoFence=0x7f0800a2;
-        public static final int oldGeoFence_dec=0x7f0800a3;
-        public static final int onceLastest=0x7f0800a4;
-        public static final int password=0x7f0800a5;
-        public static final int password_toggle_content_description=0x7f0800a6;
-        public static final int path_password_eye=0x7f0800a7;
-        public static final int path_password_eye_mask_strike_through=0x7f0800a8;
-        public static final int path_password_eye_mask_visible=0x7f0800a9;
-        public static final int path_password_strike_through=0x7f0800aa;
-        public static final int polygonGeoFence=0x7f0800ab;
-        public static final int polygonGeoFence_dec=0x7f0800ac;
+        public static final int coordinateConvert=0x7f080078;
+        public static final int counter=0x7f080079;
+        public static final int counter1=0x7f08007a;
+        public static final int defaultHttpTimeout=0x7f08007b;
+        public static final int defaultInteval=0x7f08007c;
+        public static final int device_sensors=0x7f08007d;
+        public static final int districtGeoFence=0x7f08007e;
+        public static final int districtGeoFence_dec=0x7f08007f;
+        public static final int errorCode=0x7f080080;
+        public static final int errorCodeInfo=0x7f080081;
+        public static final int errorCode_dec=0x7f080082;
+        public static final int fenceRadius=0x7f080083;
+        public static final int fence_district=0x7f080084;
+        public static final int fence_keyword=0x7f080085;
+        public static final int fence_nearby=0x7f080086;
+        public static final int fence_polygon=0x7f080087;
+        public static final int fence_round=0x7f080088;
+        public static final int findback=0x7f080089;
+        public static final int forget=0x7f08008a;
+        public static final int geoFence=0x7f08008b;
+        public static final int geoFence_dec=0x7f08008c;
+        public static final int getLastLocation=0x7f08008d;
+        public static final int gpsFirst=0x7f08008e;
+        public static final int hello_blank_fragment=0x7f08008f;
+        public static final int hideList=0x7f080090;
+        public static final int hideOption=0x7f080091;
+        public static final int hight_accuracy=0x7f080092;
+        public static final int httpTimeout=0x7f080093;
+        public static final int interval=0x7f080094;
+        public static final int keywordGeoFence=0x7f080095;
+        public static final int keywordGeoFence_dec=0x7f080096;
+        public static final int lastLocation=0x7f080097;
+        public static final int lastLocation_dec=0x7f080098;
+        public static final int location=0x7f080099;
+        public static final int location_dec=0x7f08009a;
+        public static final int location_once=0x7f08009b;
+        public static final int login=0x7f08009c;
+        public static final int meter=0x7f08009d;
+        public static final int multipleGeoFence=0x7f08009e;
+        public static final int multipleGeoFence_dec=0x7f08009f;
+        public static final int nearbyGeoFence=0x7f0800a0;
+        public static final int nearbyGeoFence_dec=0x7f0800a1;
+        public static final int needAddress=0x7f0800a2;
+        public static final int notifyMsg=0x7f0800a3;
+        public static final int notifyTitle=0x7f0800a4;
+        public static final int oldGeoFence=0x7f0800a5;
+        public static final int oldGeoFence_dec=0x7f0800a6;
+        public static final int onceLastest=0x7f0800a7;
+        public static final int password=0x7f0800a8;
+        public static final int password_toggle_content_description=0x7f0800a9;
+        public static final int path_password_eye=0x7f0800aa;
+        public static final int path_password_eye_mask_strike_through=0x7f0800ab;
+        public static final int path_password_eye_mask_visible=0x7f0800ac;
+        public static final int path_password_strike_through=0x7f0800ad;
+        public static final int polygonGeoFence=0x7f0800ae;
+        public static final int polygonGeoFence_dec=0x7f0800af;
         public static final int pull_to_refresh_from_bottom_pull_label=0x7f080035;
         public static final int pull_to_refresh_from_bottom_refreshing_label=0x7f080036;
         public static final int pull_to_refresh_from_bottom_release_label=0x7f080037;
         public static final int pull_to_refresh_pull_label=0x7f080032;
         public static final int pull_to_refresh_refreshing_label=0x7f080033;
         public static final int pull_to_refresh_release_label=0x7f080034;
-        public static final int regist=0x7f0800ad;
-        public static final int registpage=0x7f0800ae;
-        public static final int remained1=0x7f0800af;
-        public static final int remained2=0x7f0800b0;
-        public static final int removeFence=0x7f0800b1;
-        public static final int roundGeoFence=0x7f0800b2;
-        public static final int roundGeoFence_dec=0x7f0800b3;
+        public static final int regist=0x7f0800b0;
+        public static final int registpage=0x7f0800b1;
+        public static final int remained1=0x7f0800b2;
+        public static final int remained2=0x7f0800b3;
+        public static final int removeFence=0x7f0800b4;
+        public static final int roundGeoFence=0x7f0800b5;
+        public static final int roundGeoFence_dec=0x7f0800b6;
         public static final int search_menu_title=0x7f080030;
-        public static final int searchschool=0x7f0800b4;
-        public static final int setting=0x7f0800b5;
-        public static final int showList=0x7f0800b6;
-        public static final int showOption=0x7f0800b7;
-        public static final int singnature=0x7f0800b8;
-        public static final int startAssistantLocation=0x7f0800b9;
-        public static final int startLocation=0x7f0800ba;
+        public static final int searchschool=0x7f0800b7;
+        public static final int setting=0x7f0800b8;
+        public static final int showList=0x7f0800b9;
+        public static final int showOption=0x7f0800ba;
+        public static final int singnature=0x7f0800bb;
+        public static final int startAssistantLocation=0x7f0800bc;
+        public static final int startLocation=0x7f0800bd;
         public static final int status_bar_notification_info_overflow=0x7f080031;
-        public static final int stopAssistantLocation=0x7f0800bb;
-        public static final int stopLocation=0x7f0800bc;
-        public static final int title_alarmCPU=0x7f0800bd;
-        public static final int title_assistantLocation=0x7f0800be;
-        public static final int title_errorCode=0x7f0800bf;
-        public static final int title_geoFence=0x7f0800c0;
-        public static final int title_lastLocation=0x7f0800c1;
-        public static final int title_location=0x7f0800c2;
-        public static final int title_main=0x7f0800c3;
-        public static final int title_tools=0x7f0800c4;
-        public static final int tools=0x7f0800c5;
-        public static final int tools_dec=0x7f0800c6;
-        public static final int urlLocation=0x7f0800c7;
-        public static final int useSensor=0x7f0800c8;
-        public static final int wifiScan=0x7f0800c9;
+        public static final int stopAssistantLocation=0x7f0800be;
+        public static final int stopLocation=0x7f0800bf;
+        public static final int title_alarmCPU=0x7f0800c0;
+        public static final int title_assistantLocation=0x7f0800c1;
+        public static final int title_errorCode=0x7f0800c2;
+        public static final int title_geoFence=0x7f0800c3;
+        public static final int title_lastLocation=0x7f0800c4;
+        public static final int title_location=0x7f0800c5;
+        public static final int title_main=0x7f0800c6;
+        public static final int title_tools=0x7f0800c7;
+        public static final int tools=0x7f0800c8;
+        public static final int tools_dec=0x7f0800c9;
+        public static final int ucrop_error_input_data_is_absent=0x7f0800ca;
+        public static final int ucrop_label_edit_photo=0x7f080038;
+        public static final int ucrop_label_original=0x7f080039;
+        public static final int ucrop_menu_crop=0x7f08003a;
+        public static final int ucrop_mutate_exception_hint=0x7f0800cb;
+        public static final int urlLocation=0x7f0800cc;
+        public static final int useSensor=0x7f0800cd;
+        public static final int wifiScan=0x7f0800ce;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a00a2;
@@ -4444,6 +4669,11 @@ containing a value of this type.
         public static final int Widget_Design_Snackbar=0x7f0a017d;
         public static final int Widget_Design_TabLayout=0x7f0a0001;
         public static final int Widget_Design_TextInputLayout=0x7f0a017e;
+        public static final int ucrop_ImageViewWidgetIcon=0x7f0a017f;
+        public static final int ucrop_TextViewCropAspectRatio=0x7f0a0180;
+        public static final int ucrop_TextViewWidgetText=0x7f0a0181;
+        public static final int ucrop_WrapperIconState=0x7f0a0182;
+        public static final int ucrop_WrapperRotateButton=0x7f0a0183;
     }
     public static final class xml {
         public static final int photo_provider=0x7f070000;
@@ -12134,5 +12364,293 @@ containing a value of this type.
           @attr name android:layout
         */
         public static final int ViewStubCompat_android_layout = 1;
+        /** Attributes that can be used with a ucrop_AspectRatioTextView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ucrop_AspectRatioTextView_ucrop_artv_ratio_title com.example.instant_deliver:ucrop_artv_ratio_title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_AspectRatioTextView_ucrop_artv_ratio_x com.example.instant_deliver:ucrop_artv_ratio_x}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_AspectRatioTextView_ucrop_artv_ratio_y com.example.instant_deliver:ucrop_artv_ratio_y}</code></td><td></td></tr>
+           </table>
+           @see #ucrop_AspectRatioTextView_ucrop_artv_ratio_title
+           @see #ucrop_AspectRatioTextView_ucrop_artv_ratio_x
+           @see #ucrop_AspectRatioTextView_ucrop_artv_ratio_y
+         */
+        public static final int[] ucrop_AspectRatioTextView = {
+            0x7f01016f, 0x7f010170, 0x7f010171
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_artv_ratio_title}
+          attribute's value can be found in the {@link #ucrop_AspectRatioTextView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_artv_ratio_title
+        */
+        public static final int ucrop_AspectRatioTextView_ucrop_artv_ratio_title = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_artv_ratio_x}
+          attribute's value can be found in the {@link #ucrop_AspectRatioTextView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_artv_ratio_x
+        */
+        public static final int ucrop_AspectRatioTextView_ucrop_artv_ratio_x = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_artv_ratio_y}
+          attribute's value can be found in the {@link #ucrop_AspectRatioTextView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_artv_ratio_y
+        */
+        public static final int ucrop_AspectRatioTextView_ucrop_artv_ratio_y = 2;
+        /** Attributes that can be used with a ucrop_UCropView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_aspect_ratio_x com.example.instant_deliver:ucrop_aspect_ratio_x}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_aspect_ratio_y com.example.instant_deliver:ucrop_aspect_ratio_y}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_dimmed_color com.example.instant_deliver:ucrop_dimmed_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_frame_color com.example.instant_deliver:ucrop_frame_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_frame_stroke_size com.example.instant_deliver:ucrop_frame_stroke_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_grid_color com.example.instant_deliver:ucrop_grid_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_grid_column_count com.example.instant_deliver:ucrop_grid_column_count}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_grid_row_count com.example.instant_deliver:ucrop_grid_row_count}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_grid_stroke_size com.example.instant_deliver:ucrop_grid_stroke_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_oval_dimmed_layer com.example.instant_deliver:ucrop_oval_dimmed_layer}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_show_frame com.example.instant_deliver:ucrop_show_frame}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_show_grid com.example.instant_deliver:ucrop_show_grid}</code></td><td></td></tr>
+           <tr><td><code>{@link #ucrop_UCropView_ucrop_show_oval_crop_frame com.example.instant_deliver:ucrop_show_oval_crop_frame}</code></td><td></td></tr>
+           </table>
+           @see #ucrop_UCropView_ucrop_aspect_ratio_x
+           @see #ucrop_UCropView_ucrop_aspect_ratio_y
+           @see #ucrop_UCropView_ucrop_dimmed_color
+           @see #ucrop_UCropView_ucrop_frame_color
+           @see #ucrop_UCropView_ucrop_frame_stroke_size
+           @see #ucrop_UCropView_ucrop_grid_color
+           @see #ucrop_UCropView_ucrop_grid_column_count
+           @see #ucrop_UCropView_ucrop_grid_row_count
+           @see #ucrop_UCropView_ucrop_grid_stroke_size
+           @see #ucrop_UCropView_ucrop_oval_dimmed_layer
+           @see #ucrop_UCropView_ucrop_show_frame
+           @see #ucrop_UCropView_ucrop_show_grid
+           @see #ucrop_UCropView_ucrop_show_oval_crop_frame
+         */
+        public static final int[] ucrop_UCropView = {
+            0x7f010172, 0x7f010173, 0x7f010174, 0x7f010175,
+            0x7f010176, 0x7f010177, 0x7f010178, 0x7f010179,
+            0x7f01017a, 0x7f01017b, 0x7f01017c, 0x7f01017d,
+            0x7f01017e
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_aspect_ratio_x}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_aspect_ratio_x
+        */
+        public static final int ucrop_UCropView_ucrop_aspect_ratio_x = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_aspect_ratio_y}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_aspect_ratio_y
+        */
+        public static final int ucrop_UCropView_ucrop_aspect_ratio_y = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_dimmed_color}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_dimmed_color
+        */
+        public static final int ucrop_UCropView_ucrop_dimmed_color = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_frame_color}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_frame_color
+        */
+        public static final int ucrop_UCropView_ucrop_frame_color = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_frame_stroke_size}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_frame_stroke_size
+        */
+        public static final int ucrop_UCropView_ucrop_frame_stroke_size = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_grid_color}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_grid_color
+        */
+        public static final int ucrop_UCropView_ucrop_grid_color = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_grid_column_count}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_grid_column_count
+        */
+        public static final int ucrop_UCropView_ucrop_grid_column_count = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_grid_row_count}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_grid_row_count
+        */
+        public static final int ucrop_UCropView_ucrop_grid_row_count = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_grid_stroke_size}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_grid_stroke_size
+        */
+        public static final int ucrop_UCropView_ucrop_grid_stroke_size = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_oval_dimmed_layer}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_oval_dimmed_layer
+        */
+        public static final int ucrop_UCropView_ucrop_oval_dimmed_layer = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_show_frame}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_show_frame
+        */
+        public static final int ucrop_UCropView_ucrop_show_frame = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_show_grid}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_show_grid
+        */
+        public static final int ucrop_UCropView_ucrop_show_grid = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.example.instant_deliver.R.attr#ucrop_show_oval_crop_frame}
+          attribute's value can be found in the {@link #ucrop_UCropView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.instant_deliver:ucrop_show_oval_crop_frame
+        */
+        public static final int ucrop_UCropView_ucrop_show_oval_crop_frame = 2;
     };
 }

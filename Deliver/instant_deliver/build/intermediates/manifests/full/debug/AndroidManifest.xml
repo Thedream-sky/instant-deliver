@@ -82,6 +82,11 @@
         <activity android:name="com.example.instant_deliver.bindphoneActivity" />
         <activity android:name="com.example.instant_deliver.UnbindActivity" />
         <activity android:name="com.example.instant_deliver.addressActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+　
+        
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.

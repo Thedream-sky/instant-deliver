@@ -48,6 +48,7 @@
         android:value="25.3.1" />
 
     <application
+        android:name="com.example.instant_deliver.services.myApplication"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
@@ -57,7 +58,7 @@
         <!-- 高德地图key -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="f46e126bdd464b09492d2a34a93b743a" />
+            android:value="@string/gaode_Appkey" />
 
         <!-- 全局变量 位置服务locationService -->
         <service android:name="com.amap.api.location.APSService" />
@@ -82,26 +83,25 @@
         <activity android:name="com.example.instant_deliver.bindphoneActivity" />
         <activity android:name="com.example.instant_deliver.UnbindActivity" />
         <activity android:name="com.example.instant_deliver.addressActivity" />
+        <activity android:name="com.example.instant_deliver.getLocationActivity" />
+        <activity android:name="com.example.instant_deliver.showAddressActivity" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 　
         
         <!--
- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+         ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
         -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="com.example.instant_deliver.getLocationActivity" />
-        <activity android:name="com.example.instant_deliver.showAddressActivity" />
-
         <!-- 设置环信应用的AppKey -->
         <meta-data
             android:name="EASEMOB_APPKEY"
-            android:value="1138170513178389#instant-deliver" />
+            android:value="@string/huanxin_AppKey" />
         <!-- 声明SDK所需的service SDK核心功能 -->
         <service
             android:name="com.hyphenate.chat.EMChatService"
@@ -123,6 +123,7 @@
                 <action android:name="android.intent.action.USER_PRESENT" />
             </intent-filter>
         </receiver>
+
         <!-- android 7.0后访问系统资源不能直接访问，只能通过provider提供临时的权限 -->
         <provider
             android:name="android.support.v4.content.FileProvider"

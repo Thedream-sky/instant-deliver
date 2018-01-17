@@ -1,5 +1,13 @@
 [
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_btn_blue_pressed_shape.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_btn_blue_pressed_shape.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chat_press_speak_btn.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chat_press_speak_btn.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
@@ -12,12 +20,12 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\more_personal.png"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_login_sel.png",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\bg_login_sel.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
@@ -38,6 +46,10 @@
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_btn_cancel_normal_shape.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_btn_cancel_normal_shape.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_wifi_disable.png",
@@ -100,12 +112,20 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chat_send_btn_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chat_send_btn_selector.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_normal.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_ok_bg_normal.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_btn_cancel_pressed_shape.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_btn_cancel_pressed_shape.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\qq_login_pressed.png",
@@ -118,6 +138,22 @@
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\weibo_login_pressed.png",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\weibo_login_pressed.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chatfrom_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chatfrom_bg.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_sidebar_background_pressed.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_sidebar_background_pressed.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_timestampe_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_timestampe_bg.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_recording_hint_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_recording_hint_bg.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
@@ -148,12 +184,20 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_msg_state_failed_resend.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_msg_state_failed_resend.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_normal.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_cancel_bg_normal.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chatting_setmode_voice_btn.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chatting_setmode_voice_btn.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\cat.jpg",
@@ -172,8 +216,24 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.yalantis\\ucrop\\1.4.1\\res\\drawable\\ucrop_vector_loader.xml"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_btn_blue_normal_shape.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_btn_blue_normal_shape.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\background_tab.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.astuetz\\pagerslidingtabstrip\\1.0.1\\res\\drawable\\background_tab.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_type_select_btn.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_type_select_btn.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chat_location_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chat_location_selector.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_edit_text_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_edit_text_bg.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
@@ -192,6 +252,10 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.5\\res\\drawable\\bmob_update_button_check_selector.xml"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_recording_text_hint_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_recording_text_hint_bg.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_dialog_material_background.xml"
     },
@@ -204,8 +268,16 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_mm_listitem_grey.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_mm_listitem_grey.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_btn_cancel_bj.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_btn_cancel_bj.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
@@ -234,6 +306,10 @@
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_common_tab_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_common_tab_bg.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\logotitle.png",
@@ -296,6 +372,10 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\edit_bg.xml"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chatto_bg.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chatto_bg.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
@@ -306,6 +386,10 @@
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\voice_to_icon.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\voice_to_icon.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
@@ -332,8 +416,20 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.3.1\\res\\drawable\\design_password_eye.xml"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_btn_blue_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_btn_blue_selector.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\input_password_invisible.png",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\input_password_invisible.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chat_image_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chat_image_selector.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chatting_setmode_keyboard_btn.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chatting_setmode_keyboard_btn.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
@@ -344,12 +440,24 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\ic_advertisement_wall_btn.9.png"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_mm_listitem.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_mm_listitem.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\voice_from_icon.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\voice_from_icon.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ucrop_vector_loader_animated.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.yalantis\\ucrop\\1.4.1\\res\\drawable\\ucrop_vector_loader_animated.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_search_clear.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_search_clear.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
@@ -378,6 +486,10 @@
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\kk.png",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\kk.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\ease_chat_takepic_selector.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\drawable\\ease_chat_takepic_selector.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",

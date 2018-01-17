@@ -2,7 +2,8 @@
     <string name="app_name">校园速递</string>
 
     <string name="title_main">高德定位SDK功能展示</string>
-
+    <string name="huanxin_AppKey">1138170513178389#instant-deliver</string>
+    <string name="gaode_Appkey">f46e126bdd464b09492d2a34a93b743a</string>
     <string name="title_location">获取定位数据</string>
     <string name="location">获取定位数据</string>
     <string name="location_dec">调用定位接口获取定位数据</string>

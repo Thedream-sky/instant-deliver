@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Deliver.iml" filepath="$PROJECT_DIR$/../Deliver.iml" />
       <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../easeui/easeui.iml" filepath="$PROJECT_DIR$/../easeui/easeui.iml" />
       <module fileurl="file://$PROJECT_DIR$/instant_deliver.iml" filepath="$PROJECT_DIR$/instant_deliver.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/../pulltorefresh/pulltorefresh.iml" />
     </modules>

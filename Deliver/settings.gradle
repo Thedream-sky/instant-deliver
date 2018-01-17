@@ -1,2 +1,3 @@
 include ':app', ':instant_deliver'
 include ':pulltorefresh'
+include ':easeui'

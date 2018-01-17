@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 16 15:57:58 CST 2018
+#Tue Jan 16 19:08:08 CST 2018
 20.base=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\resources-debug.ap_
 143.base=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\resources-debug.ap_
 493.base=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\folders\\2000\\1f\\main

@@ -19,6 +19,10 @@ allprojects {
         maven {
             url "https://raw.github.com/bmob/bmob-android-sdk/master"
         }
+        //环信即时通讯远程库
+        maven {
+            url "https://raw.githubusercontent.com/HyphenateInc/Hyphenate-SDK-Android/master/repository"
+        }
 
     }
 

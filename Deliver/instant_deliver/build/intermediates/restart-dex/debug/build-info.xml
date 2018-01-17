@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="23"
-    density="420dpi"
+    api-level="25"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="23487650920274"
-    token="0"
+    timestamp="945292082557"
+    token="7290544419965185086"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
@@ -16,7 +16,7 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="5025" />
+        duration="0" />
     <task
         name="verifier"
         duration="0" />
@@ -26,7 +26,7 @@
         type="MAIN" />
 
     <build
-        timestamp="23487650920274"
+        timestamp="34904805879318"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="F:\Androidproject\Deliver\instant_deliver\build\outputs\apk\instant_deliver-debug.apk"

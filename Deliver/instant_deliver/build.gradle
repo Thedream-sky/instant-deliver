@@ -34,6 +34,7 @@ android {
             zipAlignEnabled true
         }
     }
+
 }
 
 
@@ -79,9 +80,9 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     /*//引入volley库，为了更加方便，高效的，频繁的访问数据量不大网络数据
-            compile 'com.mcxiaoke.volley:library:1.0.19'*/
+                compile 'com.mcxiaoke.volley:library:1.0.19'*/
     //环信sdk(包含音视频功能)
     compile 'com.hyphenate:hyphenate-sdk:3.3.0'
-
     compile project(':pulltorefresh')
+    compile project(':easeui')
 }

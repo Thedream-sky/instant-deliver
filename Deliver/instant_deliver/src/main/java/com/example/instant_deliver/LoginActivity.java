@@ -85,9 +85,6 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
         setContentView(R.layout.activity_login);
         //添加activity
         ActivityManagerTool.pushActivity(this);
-        //初始化BmobSDK
-        new bmobinit(this);
-
         //初始化
         init();
         //登陆检查

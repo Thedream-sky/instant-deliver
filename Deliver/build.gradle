@@ -23,9 +23,28 @@ allprojects {
         maven {
             url "https://raw.githubusercontent.com/HyphenateInc/Hyphenate-SDK-Android/master/repository"
         }
-
+        //谷歌服务
+        maven { url "https://maven.google.com/"}
     }
 
+    if (JavaVersion.current().isJava8Compatible()) {
+        allprojects {
+            tasks.withType(Javadoc) {
+                options.addStringOption('Xdoclint:none', '-quiet')
+            }
+        }
+    }
+    ext{
+        if(!project.hasProperty('isAarRelease')){
+            isAarRelease = false;
+        }
+        if(!project.hasProperty('isLite')){
+            isLite = false;
+        }
+        if(!project.hasProperty('sdkVersion')){
+            sdkVersion = '3.2.3'
+        }
+    }
     task clean(type: Delete) {
         delete rootProject.buildDir
     }

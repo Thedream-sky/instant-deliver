@@ -84,7 +84,7 @@ public class otherFragment extends Fragment {
                 bmobQuery.addWhereEqualTo("orderState", 1);
                 bmobQuery.addWhereEqualTo("orderType", "其他");
                 //删选超时的订单
-                bmobQuery.addWhereGreaterThanOrEqualTo("endDate", new BmobDate(new Date()));
+                //bmobQuery.addWhereGreaterThanOrEqualTo("endDate", new BmobDate(new Date()));
                 //最新发布与奖励最多的
                 bmobQuery.order("-award,-createdAt");
 
@@ -145,7 +145,11 @@ public class otherFragment extends Fragment {
     private void updateOrder() {
         Users reciver = BmobUser.getCurrentUser(Users.class);
         Order order1 = new Order();
-        if (order.getOrderState() == 1) {
+        if (order.getLauncher()
+                .getObjectId()
+                .equals(reciver.getObjectId())) {
+            Toast.makeText(getActivity(), "不能接自己发出的单", Toast.LENGTH_LONG).show();
+        } else if (order.getOrderState() == 1) {
             //状态设置为接单中
             order1.setOrderState(2);
             order1.setReciver(reciver);

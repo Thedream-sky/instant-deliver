@@ -1,4 +1,4 @@
-#Tue Jan 16 19:08:07 CST 2018
+#Mon Jan 22 18:04:40 CST 2018
 base.0=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9758eabc05a99c8b7cfa715880b23fa69aeb2a56
 renamed.1=classes.dex
 renamed.0=classes2.dex

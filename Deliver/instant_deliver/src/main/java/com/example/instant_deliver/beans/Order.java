@@ -26,7 +26,7 @@ public class Order extends BmobObject {
     //订单类型
     private String orderType;
     //订单状态：1：未接单、2：接单中、3：订单完成、4：取消订单、/*5：订单失效（该状态不需要，只需不显示即可）*/
-    private Integer  orderState;
+    private Integer orderState;
     //订单详情描述
     private String info;
     //发起时间

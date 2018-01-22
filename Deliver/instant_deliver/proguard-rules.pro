@@ -67,3 +67,5 @@
 -keep class android.net.http.**{*;}
 -keep class com.android.internal.http.multipart.**{*;}
 -keep class org.apache.commons.**{*;}
+
+-keepattributes EnclosingMethod

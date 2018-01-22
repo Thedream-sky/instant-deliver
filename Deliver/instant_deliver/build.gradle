@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+
     signingConfigs {
         config {
             keyAlias 'Tom'
@@ -20,7 +21,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -46,7 +47,6 @@ dependencies {
     /**
      * 剪切图片第三方ucorp
      */
-    compile 'com.yalantis:ucrop:1.4.1'
     /**
      *
      */
@@ -66,6 +66,7 @@ dependencies {
     //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
     //3.5.5：请务必查看下面注释[1]
     //bmob-push：Bmob的推送包
+    compile 'com.yalantis:ucrop:1.4.1'
     //bmob-im：Bmob的即时通讯包，注意每个版本的im依赖特定版本的bmob-sdk，具体的依赖关系可查看下面注释[2]
     //兼容6.0
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
@@ -80,9 +81,11 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     /*//引入volley库，为了更加方便，高效的，频繁的访问数据量不大网络数据
-                compile 'com.mcxiaoke.volley:library:1.0.19'*/
-    //环信sdk(包含音视频功能)
-    compile 'com.hyphenate:hyphenate-sdk:3.3.0'
+                             compile 'com.mcxiaoke.volley:library:1.0.19'*/
+    //环信sdk(包含音视频功能)，此依赖在easyui中被引用过，不能重复引入依赖
+    // compile 'com.hyphenate:hyphenate-sdk:3.3.0'
+    compile 'com.parse:parse-android:1.13.1'
+    compile 'com.android.support:multidex:1.0.1'
     compile project(':pulltorefresh')
     compile project(':easeui')
 }

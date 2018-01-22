@@ -1,12 +1,18 @@
 package com.example.instant_deliver.services;
 
+import android.annotation.TargetApi;
+import android.app.ActivityManager;
 import android.app.Application;
+import android.content.Context;
+import android.os.Build;
 import android.util.Log;
-
-import com.easemob.easeui.controller.EaseUI;
 import com.example.instant_deliver.tools.bmobinit;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
+import com.hyphenate.easeui.EaseUI;
+
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by King on 2018/1/16.
@@ -20,7 +26,7 @@ public class myApplication extends Application {
         //初始化BmobSDK
         new bmobinit(this);
         //初始化环信设置
-        initHuanxin();
+         initHuanxin();
     }
 
     private void initHuanxin() {
@@ -30,12 +36,11 @@ public class myApplication extends Application {
         options.setAcceptInvitationAlways(false);
         //环信服务器，默认使用环信服务器上传下载，如果设为 false，需要开发者自己处理附件消息的上传和下载
         //初始化
-        EMClient.getInstance().init(this, options);
+        EMClient.getInstance().init(this,options);
         //初始化easeui
-        EaseUI.getInstance().init(this);
+        EaseUI.getInstance().init(this,options);
         //在做打包混淆时，关闭debug模式，避免消耗不必要的资源
         EMClient.getInstance().setDebugMode(true);
     }
-
 
 }

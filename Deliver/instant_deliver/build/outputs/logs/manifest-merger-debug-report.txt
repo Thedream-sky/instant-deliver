@@ -17,12 +17,10 @@ ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xm
 		INJECTED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:7:5-81
-MERGED from [com.hyphenate:hyphenate-sdk:3.3.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.hyphenate\hyphenate-sdk\3.3.0\AndroidManifest.xml:13:5-81
 	android:name
 		ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:9:5-79
-MERGED from [com.hyphenate:hyphenate-sdk:3.3.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.hyphenate\hyphenate-sdk\3.3.0\AndroidManifest.xml:14:5-79
 	android:name
 		ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -31,7 +29,6 @@ ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xm
 		ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:11:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:13:5-76
-MERGED from [com.hyphenate:hyphenate-sdk:3.3.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.hyphenate\hyphenate-sdk\3.3.0\AndroidManifest.xml:15:5-76
 	android:name
 		ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:13:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
@@ -121,7 +118,9 @@ MERGED from [com.android.support:cardview-v7:25.3.1] F:\Androidproject\Deliver\i
 MERGED from [com.android.support:design:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\design\25.3.1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\AndroidManifest.xml:26:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-base:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.4.0\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.4.0\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.4.0\AndroidManifest.xml:4:5-19
 MERGED from [Deliver:pulltorefresh:unspecified] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\Deliver\pulltorefresh\unspecified\AndroidManifest.xml:11:5-20
 	android:label
 		ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:48:9-41
@@ -221,7 +220,7 @@ ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xm
 		ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:81:13-60
 meta-data#com.google.android.gms.version
 ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:87:9-89:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.4.0\AndroidManifest.xml:20:9-121
 	android:value
 		ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:89:13-66
 	android:name
@@ -288,6 +287,7 @@ ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xm
 		ADDED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml:123:17-67
 uses-sdk
 INJECTED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\AndroidManifest.xml:18:5-42
 MERGED from [com.yalantis:ucrop:1.4.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.yalantis\ucrop\1.4.1\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:appcompat-v7:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\AndroidManifest.xml:21:5-23:54
@@ -305,18 +305,16 @@ MERGED from [com.android.support:design:25.3.1] F:\Androidproject\Deliver\instan
 MERGED from [com.android.support:recyclerview-v7:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.hyphenate:hyphenate-sdk:3.3.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.hyphenate\hyphenate-sdk\3.3.0\AndroidManifest.xml:8:5-11:39
+MERGED from [com.google.android.gms:play-services-base:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.4.0\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\11.4.0\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\11.4.0\AndroidManifest.xml:3:5-43
 MERGED from [Deliver:pulltorefresh:unspecified] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\Deliver\pulltorefresh\unspecified\AndroidManifest.xml:7:5-9:40
-MERGED from [Deliver:easeui:unspecified] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\Deliver\easeui\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [Deliver:easeui:unspecified] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\Deliver\easeui\unspecified\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml
 		INJECTED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml
-	tools:ignore
-		ADDED from [com.hyphenate:hyphenate-sdk:3.3.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.hyphenate\hyphenate-sdk\3.3.0\AndroidManifest.xml:11:9-36
 	android:minSdkVersion
 		INJECTED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml
 		INJECTED from F:\Androidproject\Deliver\instant_deliver\src\main\AndroidManifest.xml
@@ -338,3 +336,11 @@ MERGED from [com.android.support:transition:25.3.1] F:\Androidproject\Deliver\in
 		ADDED from [com.android.support:appcompat-v7:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:27:9-31
 	android:name
 		ADDED from [com.android.support:appcompat-v7:25.3.1] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:26:9-47
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.4.0\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.4.0\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.4.0\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] F:\Androidproject\Deliver\instant_deliver\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\11.4.0\AndroidManifest.xml:19:19-85

@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="hyphenatechat_3.3.7">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/hyphenatechat_3.3.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../easeui/libs/hyphenatechat_3.3.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

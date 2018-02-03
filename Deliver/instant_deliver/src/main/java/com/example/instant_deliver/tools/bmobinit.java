@@ -1,6 +1,7 @@
 package com.example.instant_deliver.tools;
 
 import android.content.Context;
+import android.util.Log;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobConfig;
@@ -25,5 +26,6 @@ public class bmobinit {
         .setFileExpiration(2500)
         .build();
         Bmob.initialize(config);
+        Log.i("nini","bmob初始化");
     }
 }

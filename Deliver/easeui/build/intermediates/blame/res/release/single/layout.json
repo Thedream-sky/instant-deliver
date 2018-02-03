@@ -108,10 +108,6 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_row_contact.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_menu_layout.xml"
     },
@@ -132,12 +128,12 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_emojicon.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_row_chat_history.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_row_chat_history.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_row_chat_history.xml",
+        "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_row_chat_history.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_widget_contact_list.xml",
@@ -224,16 +220,16 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_row_received_file.xml"
     },
     {
+        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
+        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_row_sent_bigexpression.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_row_sent_bigexpression.xml"
-    },
-    {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
@@ -250,14 +246,6 @@
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_search_bar.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_search_bar.xml"
-    },
-    {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_action.xml"
-    },
-    {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
@@ -316,10 +304,6 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_row_received_voice.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_cancel_action.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_widget_emojicon_tab_bar.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_widget_emojicon_tab_bar.xml"
     },
@@ -338,10 +322,6 @@
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_conversation_item.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\layout\\ease_conversation_item.xml"
-    },
-    {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_lines.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",

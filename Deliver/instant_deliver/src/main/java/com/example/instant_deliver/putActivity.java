@@ -23,6 +23,7 @@ import com.example.instant_deliver.beans.myAddress;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.StringRegexUtils;
 import com.example.instant_deliver.tools.dateTypechange;
+import com.example.instant_deliver.tools.topStatusTool;
 
 import java.util.Date;
 
@@ -48,7 +49,8 @@ public class putActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_put);
-
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         init();
         initSpinner();
 

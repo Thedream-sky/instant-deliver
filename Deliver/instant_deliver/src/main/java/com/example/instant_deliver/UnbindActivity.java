@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.instant_deliver.beans.Users;
 import com.example.instant_deliver.identifyView.Topbar;
+import com.example.instant_deliver.tools.topStatusTool;
 
 import cn.bmob.v3.BmobSMS;
 import cn.bmob.v3.BmobUser;
@@ -39,6 +40,8 @@ public class UnbindActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unbind);
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //初始化控件
         init();
     }

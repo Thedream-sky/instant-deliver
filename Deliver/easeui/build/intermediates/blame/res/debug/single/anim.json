@@ -20,12 +20,12 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\anim\\hold.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\anim\\fade_in.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
+        "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\anim\\fade_in.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\push_top_in2.xml",

@@ -16,12 +16,12 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.4.0\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_seek_thumb.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_tint_seek_thumb.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\color\\abc_hint_foreground_material_dark.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\color\\abc_tint_seek_thumb.xml",
+        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\color\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\color\\abc_search_url_text.xml",

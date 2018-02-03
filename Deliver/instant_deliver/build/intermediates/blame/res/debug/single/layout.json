@@ -44,12 +44,12 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_regist.xml",
-        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_regist.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_title_bar.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\layout\\ease_widget_title_bar.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\activity_regist.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_regist.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
@@ -76,12 +76,12 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\layout\\activity_updateuser.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_picture.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\Deliver\\easeui\\unspecified\\res\\layout\\ease_row_received_picture.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",

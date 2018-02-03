@@ -1,11 +1,11 @@
 [
     {
-        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_group_brown_100_36dp.png",
-        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable-xxxhdpi\\ic_group_brown_100_36dp.png"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_keyboard_backspace_blue_500_36dp.png",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable-xxxhdpi\\ic_keyboard_backspace_blue_500_36dp.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_group_brown_100_36dp.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable-xxxhdpi\\ic_group_brown_100_36dp.png"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_location_on_deep_orange_500_18dp.png",

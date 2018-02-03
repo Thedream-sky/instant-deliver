@@ -20,12 +20,12 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\more_personal.png"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_login_sel.png",
-        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\bg_login_sel.png"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_login_sel.png",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\src\\main\\res\\drawable\\bg_login_sel.png"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
@@ -40,12 +40,12 @@
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
         "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",

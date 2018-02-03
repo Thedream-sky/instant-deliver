@@ -24,6 +24,7 @@ import com.example.instant_deliver.beans.myAddress;
 import com.example.instant_deliver.beans.Users;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.ActivityManagerTool;
+import com.example.instant_deliver.tools.topStatusTool;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -119,7 +120,8 @@ public class getLocationActivity extends Activity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_location);
-
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //添加activity
         ActivityManagerTool.pushActivity(this);
         //初始化控件及设置

@@ -25,6 +25,7 @@ import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.StringRegexUtils;
 import com.example.instant_deliver.tools.bmobinit;
 import com.example.instant_deliver.tools.getConnState;
+import com.example.instant_deliver.tools.topStatusTool;
 
 import java.io.File;
 
@@ -83,6 +84,8 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //添加activity
         ActivityManagerTool.pushActivity(this);
         //初始化

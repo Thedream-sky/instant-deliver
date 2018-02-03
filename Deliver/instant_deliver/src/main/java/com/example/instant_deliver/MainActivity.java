@@ -17,6 +17,7 @@ import com.example.instant_deliver.fragments.homeFragment;
 import com.example.instant_deliver.fragments.messageFragment;
 import com.example.instant_deliver.fragments.ownFragment;
 import com.example.instant_deliver.tools.ActivityManagerTool;
+import com.example.instant_deliver.tools.topStatusTool;
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
     private ImageView homeImage, messageImage, contactImage, ownImage, toput;
@@ -30,6 +31,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //添加activity
         ActivityManagerTool.pushActivity(this);
         //初始化

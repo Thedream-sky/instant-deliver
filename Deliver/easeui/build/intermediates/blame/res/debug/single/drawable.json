@@ -108,12 +108,12 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\drawable\\ease_chatting_setmode_voice_btn.xml"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.4.0\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\11.4.0\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",

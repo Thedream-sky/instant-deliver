@@ -16,12 +16,12 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_chatto_voice_playing.png"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_chatfrom_voice_playing_f1.png",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_chatfrom_voice_playing_f1.png"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ee_21.png",
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ee_21.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_chatfrom_voice_playing_f1.png",
+        "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ease_chatfrom_voice_playing_f1.png"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ease_show_head_toast_bg.9.png",

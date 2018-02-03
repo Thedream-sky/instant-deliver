@@ -20,6 +20,7 @@ import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.StringRegexUtils;
 import com.example.instant_deliver.tools.getConnState;
+import com.example.instant_deliver.tools.topStatusTool;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.exceptions.HyphenateException;
 
@@ -46,6 +47,8 @@ public class RegistActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regist);
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //添加activity
         ActivityManagerTool.pushActivity(this);
         //初始化
@@ -173,13 +176,13 @@ public class RegistActivity extends Activity {
                     public void done(Users users, BmobException e) {
                         if(e==null){
                             //失败会抛出HyphenateException
-                            try {
+                           /* try {
                                 //在环信注册用户
                                 EMClient.getInstance().createAccount(""+em.hashCode(),pass);//同步方法
                             } catch (HyphenateException e1) {
                                 Log.i("erro","注册失败"+e1.getDescription());
                                 e1.printStackTrace();
-                            }
+                            }*/
                             //创建构建器
                             AlertDialog.Builder builder=new AlertDialog.Builder(RegistActivity.this);
                             AlertDialog alertDialog=builder.setTitle("提示").setMessage("注册成功，稍后会有邮箱验证短信，请注意查收！")

@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.instant_deliver.beans.Users;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.StringRegexUtils;
+import com.example.instant_deliver.tools.topStatusTool;
 
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.UpdateListener;
@@ -49,6 +50,8 @@ public class FindBackActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_back);
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //初始化
         init();
         //监听

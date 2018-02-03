@@ -35,6 +35,7 @@ import com.amap.api.services.poisearch.PoiSearch;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.schoolAdapter;
+import com.example.instant_deliver.tools.topStatusTool;
 
 
 import java.text.SimpleDateFormat;
@@ -171,7 +172,8 @@ public class LocationActivity extends Activity implements PoiSearch.OnPoiSearchL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
-
+       //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //添加activity
        ActivityManagerTool.pushActivity(this);
         //初始化控件及设置

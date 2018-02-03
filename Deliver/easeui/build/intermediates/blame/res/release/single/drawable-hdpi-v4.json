@@ -444,12 +444,12 @@
         "source": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ee_21.png",
-        "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\drawable-hdpi\\ee_21.png"
-    },
-    {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ee_35.png",
         "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\drawable-hdpi\\ee_35.png"
+    },
+    {
+        "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ee_21.png",
+        "source": "F:\\Androidproject\\Deliver\\easeui\\src\\main\\res\\drawable-hdpi\\ee_21.png"
     },
     {
         "merged": "F:\\Androidproject\\Deliver\\easeui\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",

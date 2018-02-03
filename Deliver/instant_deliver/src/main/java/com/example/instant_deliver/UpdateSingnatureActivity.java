@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.instant_deliver.beans.Users;
 import com.example.instant_deliver.identifyView.Topbar;
+import com.example.instant_deliver.tools.topStatusTool;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.datatype.BmobFile;
@@ -27,6 +28,8 @@ public class UpdateSingnatureActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_singnature);
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //更新
         updateSingnature();
     }

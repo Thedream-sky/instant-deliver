@@ -33,6 +33,7 @@ import android.widget.Toast;
 import com.example.instant_deliver.beans.Users;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.getConnState;
+import com.example.instant_deliver.tools.topStatusTool;
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.UCropActivity;
 
@@ -294,6 +295,8 @@ public class BindActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bind);
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //初始化
         init();
         //异步获取数据请求

@@ -5359,16 +5359,10 @@ containing a value of this type.
         public static final int CardView=0x7f0a00a0;
         public static final int CardView_Dark=0x7f0a00e0;
         public static final int CardView_Light=0x7f0a00e1;
-        /**  模糊 
-         */
         public static final int HeadScale=0x7f0a00e2;
         public static final int MyAlertDialog=0x7f0a00e3;
         public static final int MyDialogStyle=0x7f0a00e4;
-        /**  模糊 
-         */
         public static final int MyDialogStyleBottom=0x7f0a00e5;
-        /**  模糊 
-         */
         public static final int MyDialogStyleTop=0x7f0a00e6;
         public static final int Platform_AppCompat=0x7f0a0020;
         public static final int Platform_AppCompat_Light=0x7f0a0021;

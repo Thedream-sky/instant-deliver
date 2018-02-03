@@ -1,7 +1,7 @@
-#Mon Jan 22 18:04:40 CST 2018
-base.0=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9758eabc05a99c8b7cfa715880b23fa69aeb2a56
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_aae9f6c069b3f8dbefb43819d99060751a242643\\classes.dex
-base.1=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_aae9f6c069b3f8dbefb43819d99060751a242643
-file.0=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_9758eabc05a99c8b7cfa715880b23fa69aeb2a56\\classes.dex
+#Sat Feb 03 22:53:38 CST 2018
+base.0=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes2.dex
+base.1=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+file.0=F\:\\Androidproject\\Deliver\\instant_deliver\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

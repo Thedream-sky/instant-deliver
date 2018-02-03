@@ -23,6 +23,7 @@ import com.example.instant_deliver.beans.myAddress;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.addressAdapter;
 import com.example.instant_deliver.tools.getConnState;
+import com.example.instant_deliver.tools.topStatusTool;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,7 +70,8 @@ public class addressActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_address);
-
+        //解决沉浸式状态栏问题
+        topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
         //初始化控件
         init();
         //获取地址

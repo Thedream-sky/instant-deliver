@@ -94,7 +94,7 @@ dependencies {
     /*//引入volley库，为了更加方便，高效的，频繁的访问数据量不大网络数据
                              compile 'com.mcxiaoke.volley:library:1.0.19'*/
     //环信sdk(包含音视频功能)，此依赖在easeui中被引用过，不能重复引入依赖
-    // compile 'com.hyphenate:hyphenate-sdk:3.3.0'
+    //compile 'com.hyphenate:hyphenate-sdk:3.3.4'
     compile 'com.parse:parse-android:1.13.1'
     compile 'com.android.support:multidex:1.0.1'
     compile project(':pulltorefresh')

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -26,9 +27,11 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private messageFragment messagefragment;
     private ownFragment ownfragment;
     private contantFragment contantfragment;
+    private String HOME="HOME",MESSAGE="MESSAGE",CONTACT="CONTACT",OWN="OWN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //保存当前状态
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //解决沉浸式状态栏问题
@@ -36,12 +39,11 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         //添加activity
         ActivityManagerTool.pushActivity(this);
         //初始化
-        init();
-
+        init(savedInstanceState);
     }
 
     //控件初始化
-    private void init() {
+    private void init(Bundle savedInstanceState) {
         //控件初始化
         homeImage = (ImageView) findViewById(R.id.homeImage);
         messageImage = (ImageView) findViewById(R.id.messageImage);
@@ -69,17 +71,32 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         });
 
         //默认初始化状态
-        setDefault();
+        setDefault(savedInstanceState);
     }
 
     //默认状态
-    private void setDefault() {
+    private void setDefault(Bundle savedInstanceState) {
         homeImage.setImageResource(R.drawable.ic_home_black_36dp);
         homeText.setTextColor(Color.parseColor("#2196F3"));
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        homefragment=new homeFragment();
-        transaction.add(R.id.fragmentBody, homefragment);
+        if(savedInstanceState == null){
+            homefragment=new homeFragment();
+            messagefragment = new messageFragment();
+            contantfragment = new contantFragment();
+            ownfragment = new ownFragment();
+        }else {
+            homefragment= (homeFragment) fragmentManager.findFragmentByTag(HOME);
+            messagefragment = (messageFragment) fragmentManager.findFragmentByTag(MESSAGE);
+            contantfragment = (contantFragment) fragmentManager.findFragmentByTag(CONTACT);
+            ownfragment = (ownFragment) fragmentManager.findFragmentByTag(OWN);
+        }
+
+        transaction.add(R.id.fragmentBody, homefragment,HOME );
+        transaction.add(R.id.fragmentBody, messagefragment,MESSAGE);
+        transaction.add(R.id.fragmentBody, contantfragment,CONTACT);
+        transaction.add(R.id.fragmentBody, ownfragment,OWN);
+
         transaction.commit();
 
     }
@@ -122,43 +139,26 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             case R.id.homeImage:
                 homeImage.setImageResource(R.drawable.ic_home_black_36dp);
                 homeText.setTextColor(Color.parseColor("#2196F3"));
-                if (homefragment == null) {
-                    homefragment = new homeFragment();
-                    transaction.add(R.id.fragmentBody, homefragment);
-                }
                 transaction.show(homefragment);
                 break;
             case R.id.messageImage:
                 messageImage.setImageResource(R.drawable.ic_message_press);
                 messageText.setTextColor(Color.parseColor("#2196F3"));
-                if (messagefragment == null) {
-                    messagefragment = new messageFragment();
-                    transaction.add(R.id.fragmentBody, messagefragment);
-                }
                 transaction.show(messagefragment);
                 break;
             case R.id.contactImage:
                 contactImage.setImageResource(R.drawable.ic_group_press);
                 contactText.setTextColor(Color.parseColor("#2196F3"));
-                if (contantfragment == null) {
-                    contantfragment = new contantFragment();
-                    transaction.add(R.id.fragmentBody, contantfragment);
-                }
                 transaction.show(contantfragment);
                 break;
             case R.id.ownImage:
                 ownImage.setImageResource(R.drawable.ic_person_press_36dp);
                 ownText.setTextColor(Color.parseColor("#2196F3"));
-                if (ownfragment == null) {
-                    ownfragment = new ownFragment();
-                    transaction.add(R.id.fragmentBody, ownfragment);
-                }
                 transaction.show(ownfragment);
                 break;
         }
         //提交事件
         transaction.commit();
     }
-
 
 }

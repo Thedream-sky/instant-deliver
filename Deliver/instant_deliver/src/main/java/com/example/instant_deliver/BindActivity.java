@@ -263,7 +263,9 @@ public class BindActivity extends Activity implements View.OnClickListener {
                  * 建议根据uri来获取bitmip
                  */
                 Bitmap myBitmap = null;
-                myBitmap =getBitmapFromUri(uri);
+                if(uri!=null){
+                    myBitmap =getBitmapFromUri(uri);
+                }
                 if (myBitmap != null) {
                     //判断网络状态
                     if (getConnState.isConn(BindActivity.this)) {
@@ -462,6 +464,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
         }
         // 开启一个带有返回值的Activity，请求码为PHOTO_REQUEST_CAREMA
         startActivityForResult(intent, PHOTO_REQUEST_CAREMA);
+
     }
 
 

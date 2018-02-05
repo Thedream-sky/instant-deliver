@@ -26,7 +26,7 @@ import com.hyphenate.exceptions.HyphenateException;
 
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
-import cn.bmob.v3.listener.UpdateListener;
+
 
 public class RegistActivity extends Activity {
     private Topbar topbar;
@@ -173,16 +173,19 @@ public class RegistActivity extends Activity {
             }else{
                 user.signUp(new SaveListener<Users>() {
                     @Override
-                    public void done(Users users, BmobException e) {
+                    public void done(final Users users, BmobException e) {
                         if(e==null){
-                            //失败会抛出HyphenateException
-                           /* try {
-                                //在环信注册用户
-                                EMClient.getInstance().createAccount(""+em.hashCode(),pass);//同步方法
-                            } catch (HyphenateException e1) {
-                                Log.i("erro","注册失败"+e1.getDescription());
-                                e1.printStackTrace();
-                            }*/
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    try {
+                                        EMClient.getInstance().createAccount(users.getObjectId(),pass);
+                                    } catch (HyphenateException e1) {
+                                        Log.i("fsa","注册失败");
+                                        e1.printStackTrace();
+                                    }
+                                }
+                            }).start();
                             //创建构建器
                             AlertDialog.Builder builder=new AlertDialog.Builder(RegistActivity.this);
                             AlertDialog alertDialog=builder.setTitle("提示").setMessage("注册成功，稍后会有邮箱验证短信，请注意查收！")

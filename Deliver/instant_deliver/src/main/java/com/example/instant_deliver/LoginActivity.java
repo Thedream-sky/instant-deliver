@@ -13,6 +13,7 @@ import android.os.Message;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,6 +27,8 @@ import com.example.instant_deliver.tools.StringRegexUtils;
 import com.example.instant_deliver.tools.bmobinit;
 import com.example.instant_deliver.tools.getConnState;
 import com.example.instant_deliver.tools.topStatusTool;
+import com.hyphenate.EMCallBack;
+import com.hyphenate.chat.EMClient;
 
 import java.io.File;
 
@@ -64,6 +67,9 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                 }
             }
             if (msg.what == 2) {
+               /* SharedPreferences sharedPreferences = getSharedPreferences("huanxin", MODE_PRIVATE);
+                String logined = sharedPreferences.getString("logined", "");
+                Log.i("logined","*****"+logined);*/
                 //检验用户是否登陆过
                 Users users = BmobUser.getCurrentUser(Users.class);
                 if (users != null) {
@@ -71,6 +77,7 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                     startActivity(intent);
                     finish();
                 }
+
             }
 
             if (msg.what == 3) {
@@ -241,6 +248,36 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
 
         }
     }
+    //登录环信
+    private void loginHx(String userName,String password){
+        final boolean[] flag = {false};
+        EMClient.getInstance().login(userName,password,new EMCallBack() {//回调
+            @Override
+            public void onSuccess() {
+                EMClient.getInstance().groupManager().loadAllGroups();
+                EMClient.getInstance().chatManager().loadAllConversations();
+                saveLoginhuanxin(true);
+                Log.d("main", "登录聊天服务器成功！");
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                //关闭当前页
+                finish();
+
+            }
+
+            @Override
+            public void onProgress(int progress, String status) {
+
+            }
+
+            @Override
+            public void onError(int code, String message) {
+                saveLoginhuanxin(false);
+                Log.d("main", "登录聊天服务器失败！");
+                Toast.makeText(LoginActivity.this,"登录失败，请查看账号或者密码是否正确",Toast.LENGTH_LONG).show();
+            }
+        });
+    }
 
     //登陆方法
     private void login() {
@@ -248,7 +285,7 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
 
         final Users user = new Users();
         final String coun = counter.getText().toString().trim();
-        String pass = password.getText().toString().trim();
+        final String pass = password.getText().toString().trim();
 
         user.setPassword(pass);
         if (!getConnState.isConn(this)) {
@@ -264,6 +301,8 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                         @Override
                         public void done(Users users, BmobException e) {
                             if (users != null) {
+                                //登录环信
+                                loginHx(users.getObjectId(),pass);
                                 warn.setVisibility(View.GONE);
                                 progressDialog.dismiss();
                                 boolean flag = users.getEmailVerified();
@@ -273,10 +312,6 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                                     //下载头像
                                     handler.sendEmptyMessage(3);
 
-                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                    startActivity(intent);
-                                    //关闭当前页
-                                    finish();
                                 } else {
                                     //创建构建器
                                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
@@ -329,15 +364,12 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                                 progressDialog.dismiss();
                                 boolean flag = users.getMobilePhoneNumberVerified();
                                 if (flag) {
+                                    //登录环信
+                                    loginHx(users.getObjectId(),pass);
                                     //保存数据
                                     saveLoginCurrentCount(coun);
                                     //下载头像
                                     handler.sendEmptyMessage(3);
-
-                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                    startActivity(intent);
-
-                                    finish();
                                 } else {
                                     warn.setText("此手机号还没通过验证，登陆失败");
                                     warn.setVisibility(View.VISIBLE);
@@ -366,6 +398,17 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
         editor.putString("token",currentUser.getSessionToken());
         editor.commit();
     }
+    public void saveLoginhuanxin(boolean flag){
+        //保存环信的登录状态
+        SharedPreferences sharedPreferences = getSharedPreferences("huanxin", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        if(flag){
+            editor.putString("logined","true");
+        }else {
+            editor.putString("logined","false");
+        }
+
+    }
 
     //获取头像，每次登陆都会重新刷新下头像信息
     private void getHead() {
@@ -381,9 +424,7 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
             bmobFile.download(file, new DownloadFileListener() {
                 @Override
                 public void done(String s, BmobException e) {
-                    if (e == null) {
-                        Toast.makeText(LoginActivity.this, "头像获取成功", Toast.LENGTH_SHORT).show();
-                    } else {
+                    if (e != null) {
                         Toast.makeText(LoginActivity.this, "头像获取失败", Toast.LENGTH_SHORT).show();
                     }
                 }

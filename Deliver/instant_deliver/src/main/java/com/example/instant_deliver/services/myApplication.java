@@ -19,7 +19,7 @@ public class myApplication extends Application {
         //初始化BmobSDK
         new bmobinit(this);
         //初始化环信设置
-       // initHuanxin();
+        initHuanxin();
     }
 
     private void initHuanxin() {

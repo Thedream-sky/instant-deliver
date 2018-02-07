@@ -4,28 +4,20 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.beans.myAddress;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.addressAdapter;
 import com.example.instant_deliver.tools.getConnState;
 import com.example.instant_deliver.tools.topStatusTool;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import cn.bmob.v3.BmobQuery;
@@ -109,7 +101,7 @@ public class addressActivity extends Activity implements View.OnClickListener {
     //查询地址
     private void queryAdress() {
         //当前用户
-        Users user = BmobUser.getCurrentUser(Users.class);
+        _User user = BmobUser.getCurrentUser(_User.class);
         BmobQuery<myAddress> query = new BmobQuery<>();
         query.addWhereEqualTo("users", user);
         //查询

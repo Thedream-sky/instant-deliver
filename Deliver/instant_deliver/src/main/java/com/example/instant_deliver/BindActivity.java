@@ -30,7 +30,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.getConnState;
 import com.example.instant_deliver.tools.topStatusTool;
@@ -98,7 +98,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
 
     //上传头像
     private void uplodehead() {
-        final Users users = BmobUser.getCurrentUser(Users.class);
+        final _User users = BmobUser.getCurrentUser(_User.class);
         //如果已经存在头像，就先删除原来的头像
         if (users.getHeadurl() != null) {
             BmobFile file1 = new BmobFile();
@@ -140,7 +140,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
                             progressDialog.dismiss();
                             getImage();
                             Toast.makeText(BindActivity.this, "头像上传成功", Toast.LENGTH_SHORT).show();
-                            Users user = new Users();
+                            _User user = new _User();
                             //成功保存图像地址
                             user.setHeadurl(bmobFile.getFileUrl());
                             user.update(users.getObjectId(), new UpdateListener() {
@@ -233,7 +233,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
         } else if (requestCode == PHOTO_REQUEST_CUT) {
             //返回传值
             Intent intent = new Intent();
-            Users user = BmobUser.getCurrentUser(Users.class);
+            _User user = BmobUser.getCurrentUser(_User.class);
             //传对象
             intent.putExtra("user", user);
             setResult(4, intent);
@@ -311,7 +311,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
         if( keyCode==KeyEvent.KEYCODE_BACK ){
             //返回传值
             Intent intent = new Intent();
-            Users user = BmobUser.getCurrentUser(Users.class);
+            _User user = BmobUser.getCurrentUser(_User.class);
             //传对象
             intent.putExtra("user", user);
             setResult(4, intent);
@@ -341,7 +341,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
             public void leftclick() {
                 //返回传值
                 Intent intent = new Intent();
-                Users user = BmobUser.getCurrentUser(Users.class);
+                _User user = BmobUser.getCurrentUser(_User.class);
                 //传对象
                 intent.putExtra("user", user);
                 setResult(4, intent);
@@ -357,7 +357,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
 
     //获取用户信息
     private void getinfo() {
-        Users user = BmobUser.getCurrentUser(Users.class);
+        _User user = BmobUser.getCurrentUser(_User.class);
 
         //图片名（不同用户的有不同的id,自然头像图片就不一样）
         PHOTO_FILE_NAME = user.getObjectId() + ".jpg";
@@ -615,7 +615,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
                 startActivityForResult(intent1, 1);
                 break;
             case R.id.bind_phone:
-                Users user = BmobUser.getCurrentUser(Users.class);
+                _User user = BmobUser.getCurrentUser(_User.class);
                 if (user.getMobilePhoneNumber() == null || user.getMobilePhoneNumber().equals("")) {
                     //跳转到号码绑定的页面
                     Intent intent2 = new Intent(this, bindphoneActivity.class);

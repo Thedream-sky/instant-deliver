@@ -21,10 +21,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.StringRegexUtils;
-import com.example.instant_deliver.tools.bmobinit;
 import com.example.instant_deliver.tools.getConnState;
 import com.example.instant_deliver.tools.topStatusTool;
 import com.hyphenate.EMCallBack;
@@ -67,17 +66,15 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                 }
             }
             if (msg.what == 2) {
-               /* SharedPreferences sharedPreferences = getSharedPreferences("huanxin", MODE_PRIVATE);
-                String logined = sharedPreferences.getString("logined", "");
-                Log.i("logined","*****"+logined);*/
                 //检验用户是否登陆过
-                Users users = BmobUser.getCurrentUser(Users.class);
-                if (users != null) {
+                _User users = BmobUser.getCurrentUser(_User.class);
+                SharedPreferences sharedPreferences = getSharedPreferences("huanxin", MODE_PRIVATE);
+                String logined = sharedPreferences.getString("logined", "");
+                if (users != null&&logined.equals("logined")) {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 }
-
             }
 
             if (msg.what == 3) {
@@ -250,7 +247,6 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
     }
     //登录环信
     private void loginHx(String userName,String password){
-        final boolean[] flag = {false};
         EMClient.getInstance().login(userName,password,new EMCallBack() {//回调
             @Override
             public void onSuccess() {
@@ -283,7 +279,7 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
     private void login() {
         progressDialog = ProgressDialog.show(this, "提示", "登陆中。。。");
 
-        final Users user = new Users();
+        final _User user = new _User();
         final String coun = counter.getText().toString().trim();
         final String pass = password.getText().toString().trim();
 
@@ -297,9 +293,9 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                 //邮箱登陆方式
                 if (StringRegexUtils.Validate(coun, StringRegexUtils.email_regexp)) {
                     user.setEmail(coun);
-                    user.loginByAccount(coun, pass, new LogInListener<Users>() {
+                    user.loginByAccount(coun, pass, new LogInListener<_User>() {
                         @Override
-                        public void done(Users users, BmobException e) {
+                        public void done(_User users, BmobException e) {
                             if (users != null) {
                                 //登录环信
                                 loginHx(users.getObjectId(),pass);
@@ -356,9 +352,9 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                 //手机登陆方式
                 if (StringRegexUtils.Validate(coun, StringRegexUtils.phone_regexp)) {
                     user.setMobilePhoneNumber(coun);
-                    user.loginByAccount(coun, pass, new LogInListener<Users>() {
+                    user.loginByAccount(coun, pass, new LogInListener<_User>() {
                         @Override
-                        public void done(Users users, BmobException e) {
+                        public void done(_User users, BmobException e) {
                             if (users != null) {
                                 warn.setVisibility(View.GONE);
                                 progressDialog.dismiss();
@@ -390,7 +386,7 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
 
     //保存当前的登陆成功的账号
     public void saveLoginCurrentCount(String counter) {
-        Users currentUser = BmobUser.getCurrentUser(Users.class);
+        _User currentUser = BmobUser.getCurrentUser(_User.class);
         //保存当前登陆账号
         SharedPreferences sharedPreferences = getSharedPreferences("User", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -403,16 +399,16 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
         SharedPreferences sharedPreferences = getSharedPreferences("huanxin", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         if(flag){
-            editor.putString("logined","true");
+            editor.putString("logined","logined");
         }else {
-            editor.putString("logined","false");
+            editor.putString("logined","unlogined");
         }
-
+        editor.commit();
     }
 
     //获取头像，每次登陆都会重新刷新下头像信息
     private void getHead() {
-        Users users = BmobUser.getCurrentUser(Users.class);
+        _User users = BmobUser.getCurrentUser(_User.class);
         if (users.getHeadurl()!=null) {
             BmobFile bmobFile = new BmobFile(users.getObjectId() + ".jpg", "", users.getHeadurl());
             File appDir = new File(Environment.getExternalStorageDirectory(), "instant_deliver");

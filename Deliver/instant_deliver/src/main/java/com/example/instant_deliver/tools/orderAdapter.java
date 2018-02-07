@@ -1,11 +1,8 @@
 package com.example.instant_deliver.tools;
 
-import android.app.AlertDialog;
+
 import android.content.Context;
-import android.content.DialogInterface;
-import android.graphics.Bitmap;
 import android.util.Log;
-import android.util.LruCache;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,27 +10,19 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.Volley;
+
+
 import com.example.instant_deliver.R;
 import com.example.instant_deliver.beans.Order;
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.ImageViewPlus;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.bmob.v3.BmobQuery;
-import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.datatype.BmobDate;
-import cn.bmob.v3.exception.BmobException;
-import cn.bmob.v3.listener.FindListener;
-import cn.bmob.v3.listener.UpdateListener;
+
 
 /**
  * Created by King on 2017/5/24.
@@ -79,7 +68,8 @@ public class orderAdapter extends BaseAdapter  implements View.OnClickListener {
         if (convertView == null) {
             LayoutInflater layoutInflater = LayoutInflater.from(context);
             convertView = layoutInflater.inflate(R.layout.ordersitem, null);
-           // viewHolder.imageViewPlus = (ImageViewPlus) convertView.findViewById(R.id.order_head);
+            /*viewHolder.imageViewPlus = (ImageViewPlus) convertView.findViewById(R.id.order_head);*/
+            viewHolder.imageViewPlus = (ImageView) convertView.findViewById(R.id.order_head);
             viewHolder.address = (TextView) convertView.findViewById(R.id.order_address);
             viewHolder.endtime = (TextView) convertView.findViewById(R.id.order_endtime);
             viewHolder.award = (TextView) convertView.findViewById(R.id.order_award);
@@ -96,10 +86,8 @@ public class orderAdapter extends BaseAdapter  implements View.OnClickListener {
 
         //送达地址
         viewHolder.address.setText("送达地址："+order.getAdress());
-
-        //异步加载图片
-        //loadImage.loadImageVolley(context,order.getLauncherhead(),viewHolder.imageViewPlus);
-
+        loadImage.loadImageGlide(context,order.getLauncherhead(),viewHolder.imageViewPlus);
+       /* Log.i("&&&&&","**"+order.getLauncher().getHeadurl());*/
         BmobDate bmobDate=order.getEndDate();
 
         //截止时间
@@ -125,7 +113,8 @@ public class orderAdapter extends BaseAdapter  implements View.OnClickListener {
     //内部类（内容提供者）
     class ViewHolder {
         //头像
-       // private ImageViewPlus imageViewPlus;
+       /* private ImageViewPlus imageViewPlus;*/
+        private ImageView imageViewPlus;
         //结束时间
         private TextView endtime;
         //送达地址

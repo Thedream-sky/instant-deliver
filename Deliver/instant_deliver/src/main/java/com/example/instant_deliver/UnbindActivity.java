@@ -3,7 +3,6 @@ package com.example.instant_deliver;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.topStatusTool;
 
@@ -58,10 +57,10 @@ public class UnbindActivity extends Activity implements View.OnClickListener {
                 public void done(BmobException e) {
                     //验证码有效
                     if (e == null) {
-                        Users user = new Users();
+                        _User user = new _User();
                         user.setMobilePhoneNumber("");
                         user.setMobilePhoneNumberVerified(false);
-                        Users cur = BmobUser.getCurrentUser(Users.class);
+                        _User cur = BmobUser.getCurrentUser(_User.class);
                         user.update(cur.getObjectId(), new UpdateListener() {
                             @Override
                             public void done(BmobException e) {
@@ -134,7 +133,7 @@ public class UnbindActivity extends Activity implements View.OnClickListener {
         };
 
         //获取当前用户的绑定的手机号
-        Users user = BmobUser.getCurrentUser(Users.class);
+        _User user = BmobUser.getCurrentUser(_User.class);
         //设置textview 的值
         unbindphonenum.setText(user.getMobilePhoneNumber());
 

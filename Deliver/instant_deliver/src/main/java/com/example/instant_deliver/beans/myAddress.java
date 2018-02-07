@@ -8,17 +8,17 @@ import cn.bmob.v3.BmobObject;
 
 public class myAddress extends BmobObject{
     //用户
-    private Users users;
+    private _User users;
     //地址
     private String address;
     //地址用户名
     private String name;
 
-    public Users getUsers() {
+    public _User getUsers() {
         return users;
     }
 
-    public void setUsers(Users users) {
+    public void setUsers(_User users) {
         this.users = users;
     }
 

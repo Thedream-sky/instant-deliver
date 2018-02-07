@@ -1,28 +1,22 @@
 package com.example.instant_deliver;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.instant_deliver.beans.Order;
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.beans.myAddress;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.StringRegexUtils;
-import com.example.instant_deliver.tools.dateTypechange;
 import com.example.instant_deliver.tools.topStatusTool;
 
 import java.util.Date;
@@ -43,7 +37,7 @@ public class putActivity extends Activity implements View.OnClickListener {
     private EditText info;
     private TextView address;
     private Button submit;
-    private Users users;
+    private _User users;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +75,7 @@ public class putActivity extends Activity implements View.OnClickListener {
     //初始控件
     private void init() {
         //当前用户
-        users = BmobUser.getCurrentUser(Users.class);
+        users = BmobUser.getCurrentUser(_User.class);
         //提交按钮
         submit = (Button) findViewById(R.id.putbtu);
         //导航栏

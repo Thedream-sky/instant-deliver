@@ -1,17 +1,14 @@
 package com.example.instant_deliver.fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -21,7 +18,7 @@ import android.widget.TextView;
 import com.example.instant_deliver.BindActivity;
 import com.example.instant_deliver.R;
 import com.example.instant_deliver.addressActivity;
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -38,12 +35,12 @@ public class ownFragment extends Fragment implements View.OnClickListener {
     private View view;
     private ImageView tobind;
     private ImageView head;
-    private Users user;
+    private _User user;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             if (msg.what == 1) {
-                user = BmobUser.getCurrentUser(Users.class);
+                user = BmobUser.getCurrentUser(_User.class);
                 initinfo();
             }
         }
@@ -106,7 +103,7 @@ public class ownFragment extends Fragment implements View.OnClickListener {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==3&&resultCode==4){
             //回调返回user对象，重新刷新
-            user= (Users) data.getSerializableExtra("user");
+            user= (_User) data.getSerializableExtra("user");
             //刷新数据
             initinfo();
         }

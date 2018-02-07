@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.StringRegexUtils;
@@ -159,7 +159,7 @@ public class RegistActivity extends Activity {
         String sc=school.getText().toString().trim();
 
         //用户名与密码是必须的
-        final Users user=new Users();
+        final _User user=new _User();
         user.setUsername(em);
         user.setEmail(em);
         user.setPassword(pass);
@@ -171,9 +171,9 @@ public class RegistActivity extends Activity {
             if(!getConnState.isConn(this)){
                 Toast.makeText(RegistActivity.this,"当前网络不可用",Toast.LENGTH_LONG).show();
             }else{
-                user.signUp(new SaveListener<Users>() {
+                user.signUp(new SaveListener<_User>() {
                     @Override
-                    public void done(final Users users, BmobException e) {
+                    public void done(final _User users, BmobException e) {
                         if(e==null){
                             new Thread(new Runnable() {
                                 @Override

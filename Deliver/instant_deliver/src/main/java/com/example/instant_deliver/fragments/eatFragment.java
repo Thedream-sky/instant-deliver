@@ -13,33 +13,28 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.instant_deliver.R;
 import com.example.instant_deliver.beans.Order;
-import com.example.instant_deliver.beans.Users;
-import com.example.instant_deliver.beans.myAddress;
-import com.example.instant_deliver.showAddressActivity;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.tools.ListviewForScrollView;
 import com.example.instant_deliver.tools.getConnState;
 import com.example.instant_deliver.tools.orderAdapter;
+import com.example.instant_deliver.tools.usersManager;
 import com.handmark.pulltorefresh.library.ILoadingLayout;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
+import com.hyphenate.exceptions.HyphenateException;
 
 import java.util.ArrayList;
 
-import java.util.Date;
 import java.util.List;
 
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
-import cn.bmob.v3.datatype.BmobDate;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.UpdateListener;
@@ -75,14 +70,18 @@ public class eatFragment extends Fragment {
                 if (getConnState.isConn(getActivity())) {
                     Order order = (Order) msg.obj;
                     int pos = msg.arg1;
-                    updateOrder();
+                    try {
+                        updateOrder();
+                    } catch (HyphenateException e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     Toast.makeText(getActivity(), "当前网络不可用", Toast.LENGTH_SHORT).show();
                 }
             }
             //查询数据
             if (msg.what == 1) {
-                Users users = BmobUser.getCurrentUser(Users.class);
+                _User users = BmobUser.getCurrentUser(_User.class);
                 BmobQuery<Order> bmobQuery = new BmobQuery<>();
                 //设置每页最多为5条数据
                 bmobQuery.setLimit(LIMIT);
@@ -154,15 +153,17 @@ public class eatFragment extends Fragment {
     };
 
     //修改订单状态
-    private void updateOrder() {
-        Users reciver = BmobUser.getCurrentUser(Users.class);
+    private void updateOrder() throws HyphenateException {
+        final _User reciver = BmobUser.getCurrentUser(_User.class);
         Order order1 = new Order();
+
         //判断是否发出与抢单人是否为同一人
         if (order.getLauncher()
                 .getObjectId()
                 .equals(reciver.getObjectId())) {
             Toast.makeText(getActivity(), "不能接自己发出的单", Toast.LENGTH_LONG).show();
         } else if (order.getOrderState() == 1) {
+
             //状态设置为接单中
             order1.setOrderState(2);
             order1.setReciver(reciver);
@@ -172,6 +173,7 @@ public class eatFragment extends Fragment {
                 @Override
                 public void done(BmobException e) {
                     if (e == null) {
+                        usersManager.addFriend(reciver.getObjectId(),order.getLauncher().getObjectId());
                         totallist.remove(pos);
                         adapter.notifyDataSetChanged();
                         Toast.makeText(getActivity(), "抢单成功！！！", Toast.LENGTH_SHORT).show();

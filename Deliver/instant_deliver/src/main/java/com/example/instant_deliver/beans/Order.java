@@ -1,8 +1,5 @@
 package com.example.instant_deliver.beans;
 
-import java.util.Date;
-
-import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.datatype.BmobDate;
 
@@ -16,13 +13,13 @@ public class Order extends BmobObject {
     //发起人名称
     private String receviername;
     //发起人
-    private Users launcher;
+    private _User launcher;
     //发起人头像
     private String launcherhead;
     //发起人学校
     private String school;
     //接单人
-    private Users reciver;
+    private _User reciver;
     //订单类型
     private String orderType;
     //订单状态：1：未接单、2：接单中、3：订单完成、4：取消订单、/*5：订单失效（该状态不需要，只需不显示即可）*/
@@ -40,19 +37,19 @@ public class Order extends BmobObject {
     //手机号
     private String phonenum;
 
-    public Users getLauncher() {
+    public _User getLauncher() {
         return launcher;
     }
 
-    public void setLauncher(Users launcher) {
+    public void setLauncher(_User launcher) {
         this.launcher = launcher;
     }
 
-    public Users getReciver() {
+    public _User getReciver() {
         return reciver;
     }
 
-    public void setReciver(Users reciver) {
+    public void setReciver(_User reciver) {
         this.reciver = reciver;
     }
 

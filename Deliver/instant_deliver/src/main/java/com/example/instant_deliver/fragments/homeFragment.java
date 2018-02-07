@@ -1,32 +1,23 @@
 package com.example.instant_deliver.fragments;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.example.instant_deliver.R;
-import com.example.instant_deliver.beans.Users;
-import com.example.instant_deliver.identifyView.Topbar;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.tools.MyPagerAdapter;
-import com.example.instant_deliver.tools.childViewPager;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.bmob.v3.BmobUser;
-import cn.bmob.v3.datatype.BmobFile;
-import cn.bmob.v3.exception.BmobException;
-import cn.bmob.v3.listener.DownloadFileListener;
 
 public class homeFragment extends Fragment {
     private PagerSlidingTabStrip tabs;
@@ -102,7 +93,7 @@ public class homeFragment extends Fragment {
     private void initTitle(){
         //默认为“首页”
         String title="首页";
-        Users user=BmobUser.getCurrentUser(Users.class);
+        _User user=BmobUser.getCurrentUser(_User.class);
         title=user.getUniversity().toString();
         titletext.setText(title);
     }

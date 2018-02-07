@@ -3,17 +3,13 @@ package com.example.instant_deliver;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.topStatusTool;
 
@@ -67,11 +63,11 @@ public class UpdateuserActivity extends Activity {
                 if (name.length() < 2 || name.length() > 5) {
                     Toast.makeText(UpdateuserActivity.this, "用户名长度不得小于2或大于5", Toast.LENGTH_SHORT).show();
                 } else {
-                    Users myuser = new Users();
+                    _User myuser = new _User();
                     myuser.setUsername(name);
                     myuser.setSessionToken(token);
 
-                    Users user = BmobUser.getCurrentUser(Users.class);
+                    _User user = BmobUser.getCurrentUser(_User.class);
                     myuser.update(user.getObjectId(), new UpdateListener() {
                         @Override
                         public void done(BmobException e) {

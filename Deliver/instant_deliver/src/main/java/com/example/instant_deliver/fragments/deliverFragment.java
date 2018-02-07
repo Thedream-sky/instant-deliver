@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 import com.example.instant_deliver.R;
 import com.example.instant_deliver.beans.Order;
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.tools.ListviewForScrollView;
 import com.example.instant_deliver.tools.getConnState;
 import com.example.instant_deliver.tools.orderAdapter;
@@ -26,12 +26,10 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
-import cn.bmob.v3.datatype.BmobDate;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.UpdateListener;
@@ -73,7 +71,7 @@ public class deliverFragment extends Fragment {
             }
             //页面加载
             if (msg.what == 1) {
-                Users users = BmobUser.getCurrentUser(Users.class);
+                _User users = BmobUser.getCurrentUser(_User.class);
                 BmobQuery<Order> bmobQuery = new BmobQuery<>();
                 //设置每页最多为5条数据
                 bmobQuery.setLimit(LIMIT);
@@ -141,7 +139,7 @@ public class deliverFragment extends Fragment {
 
     //修改订单状态
     private void updateOrder() {
-        Users reciver = BmobUser.getCurrentUser(Users.class);
+        _User reciver = BmobUser.getCurrentUser(_User.class);
         Order order1 = new Order();
         //判断是否发出与抢单人是否为同一人
         if (order.getLauncher()

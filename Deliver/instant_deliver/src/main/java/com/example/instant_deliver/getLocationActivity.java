@@ -20,8 +20,8 @@ import com.amap.api.maps2d.model.BitmapDescriptor;
 import com.amap.api.maps2d.model.BitmapDescriptorFactory;
 import com.amap.api.maps2d.model.LatLng;
 import com.amap.api.maps2d.model.MarkerOptions;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.beans.myAddress;
-import com.example.instant_deliver.beans.Users;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.topStatusTool;
@@ -266,7 +266,7 @@ public class getLocationActivity extends Activity implements View.OnClickListene
         if (name.equals("") || name == null || ads.equals("") || ads == null || adtails.equals("") || adtails == null) {
             Toast.makeText(getLocationActivity.this, "地址或者用户名不能有空", Toast.LENGTH_SHORT).show();
         } else {
-            Users currency = BmobUser.getCurrentUser(Users.class);
+            _User currency = BmobUser.getCurrentUser(_User.class);
             myAddress myaddress = new myAddress();
             myaddress.setName(name);
             myaddress.setAddress(ads + adtails);

@@ -60,8 +60,10 @@ dependencies {
      */
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     /**
-     *
+     *glide 图片加载框架
      */
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+
     /**
      *   高德地图依赖
      */

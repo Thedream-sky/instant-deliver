@@ -1,10 +1,8 @@
 package com.example.instant_deliver;
 
 import android.app.Activity;
-import android.opengl.EGLSurface;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -13,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.instant_deliver.beans.Users;
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.StringRegexUtils;
 import com.example.instant_deliver.tools.topStatusTool;
@@ -30,7 +28,7 @@ public class FindBackActivity extends Activity {
         public void handleMessage(Message msg) {
             if(msg.what==1){
                 final String email=findbackEmail.getText().toString().trim();
-                Users.resetPasswordByEmail(email, new UpdateListener() {
+                _User.resetPasswordByEmail(email, new UpdateListener() {
                     @Override
                     public void done(BmobException e) {
                         if(e==null){

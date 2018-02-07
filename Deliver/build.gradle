@@ -25,6 +25,8 @@ allprojects {
         }
         //谷歌服务
         maven { url "https://maven.google.com/"}
+        //gilde图片加载库
+        maven { url 'https://jitpack.io' }
     }
 
     if (JavaVersion.current().isJava8Compatible()) {

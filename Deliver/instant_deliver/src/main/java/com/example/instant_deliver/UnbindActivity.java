@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.topStatusTool;
@@ -49,7 +50,7 @@ public class UnbindActivity extends Activity implements View.OnClickListener {
     private void unbindphone() {
         String phonenum = unbindphonenum.getText().toString();
         if (uncode.getText().toString().trim().length() != 6) {
-            Toast.makeText(UnbindActivity.this, "验证码不正确" , Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "验证码不正确" , Toast.LENGTH_SHORT).show();
         } else {
             //检验验证码是否正确有效
             BmobSMS.verifySmsCode(phonenum, uncode.getText().toString().trim(), new UpdateListener() {
@@ -65,13 +66,13 @@ public class UnbindActivity extends Activity implements View.OnClickListener {
                             @Override
                             public void done(BmobException e) {
                                 if (e == null) {
-                                    Toast.makeText(UnbindActivity.this, "解绑成功", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplication(), "解绑成功", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent();
                                     //设置返回结果
                                     setResult(2, intent);
                                     finish();
                                 } else {
-                                    Toast.makeText(UnbindActivity.this, "解绑失败" + e.toString(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplication(), "解绑失败" + e.toString(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
@@ -79,7 +80,7 @@ public class UnbindActivity extends Activity implements View.OnClickListener {
                     }
                     //验证码无效
                     else {
-                        Toast.makeText(UnbindActivity.this, "验证码错误" + e.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), "验证码错误" + e.toString(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -96,9 +97,9 @@ public class UnbindActivity extends Activity implements View.OnClickListener {
                 if (e == null) {
                     //开始倒计时
                     timer.start();
-                    Toast.makeText(UnbindActivity.this, "验证码已经发出，请注意查收", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(), "验证码已经发出，请注意查收", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(UnbindActivity.this, "验证码强求失败" + e.toString(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(), "验证码强求失败" + e.toString(), Toast.LENGTH_LONG).show();
                 }
             }
         });

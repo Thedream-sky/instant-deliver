@@ -6,13 +6,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+
 
 import com.example.instant_deliver.beans.myAddress;
 import com.example.instant_deliver.identifyView.Topbar;
@@ -85,7 +85,7 @@ public class showAddressActivity extends Activity implements View.OnClickListene
         String na=name.getText().toString().trim();
         String adds=address.getText().toString().trim();
         if(na.equals("")||na==null||adds.equals("")||adds==null){
-            Toast.makeText(showAddressActivity.this,"姓名或者地址不能为空",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(),"姓名或者地址不能为空",Toast.LENGTH_SHORT).show();
         }else {
             myAddress address1=new myAddress();
             address1.setName(na);
@@ -94,10 +94,10 @@ public class showAddressActivity extends Activity implements View.OnClickListene
                 @Override
                 public void done(BmobException e) {
                     if(e==null) {
-                        Toast.makeText(showAddressActivity.this,"修改成功",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(),"修改成功",Toast.LENGTH_SHORT).show();
                         handler.sendEmptyMessageDelayed(1,200);
                     }else {
-                        Toast.makeText(showAddressActivity.this,"修改失败",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(),"修改失败",Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -131,10 +131,10 @@ public class showAddressActivity extends Activity implements View.OnClickListene
                         //提示框消失
                         dialog.dismiss();
                         if (e == null) {
-                            Toast.makeText(showAddressActivity.this, "删除成功", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplication(), "删除成功", Toast.LENGTH_SHORT).show();
                            handler.sendEmptyMessageDelayed(1,200);
                         } else {
-                            Toast.makeText(showAddressActivity.this, "删除失败" + e.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplication(), "删除失败" + e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

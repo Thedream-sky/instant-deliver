@@ -30,6 +30,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.getConnState;
@@ -139,7 +140,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
                         if (e == null) {
                             progressDialog.dismiss();
                             getImage();
-                            Toast.makeText(BindActivity.this, "头像上传成功", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplication(), "头像上传成功", Toast.LENGTH_SHORT).show();
                             _User user = new _User();
                             //成功保存图像地址
                             user.setHeadurl(bmobFile.getFileUrl());
@@ -150,7 +151,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
                                 }
                             });
                         } else {
-                            Toast.makeText(BindActivity.this, "头像上传失败" + e.toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplication(), "头像上传失败" + e.toString(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -227,7 +228,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
                     Log.i("hahha",outuri.toString());
                 }
             } else {
-                Toast.makeText(BindActivity.this, "未找到存储卡，无法存储照片！", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplication(), "未找到存储卡，无法存储照片！", Toast.LENGTH_SHORT).show();
             }
 
         } else if (requestCode == PHOTO_REQUEST_CUT) {
@@ -276,7 +277,7 @@ public class BindActivity extends Activity implements View.OnClickListener {
                         message.obj = myBitmap;
                         handler.sendMessageDelayed(message, 500);
                     } else {
-                        Toast.makeText(BindActivity.this, "当前网络不可用", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), "当前网络不可用", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

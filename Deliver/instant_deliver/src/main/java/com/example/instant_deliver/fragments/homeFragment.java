@@ -82,6 +82,7 @@ public class homeFragment extends Fragment {
         adapter=new MyPagerAdapter(getChildFragmentManager(),fragments,titles);
         pager.setAdapter(adapter);
         tabs.setViewPager(pager);
+        tabs.setTextColor(R.color.textcolorHintb);
         //获取title
         handler.sendEmptyMessage(1);
         //获取用户头像

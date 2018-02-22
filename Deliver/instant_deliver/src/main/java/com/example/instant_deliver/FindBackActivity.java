@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.StringRegexUtils;
@@ -32,7 +33,7 @@ public class FindBackActivity extends Activity {
                     @Override
                     public void done(BmobException e) {
                         if(e==null){
-                            Toast.makeText(FindBackActivity.this,"重置密码请求成功，请到" + email + "邮箱进行密码重置操作",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplication(),"重置密码请求成功，请到" + email + "邮箱进行密码重置操作",Toast.LENGTH_SHORT).show();
                             finish();
                         }else{
                           warn.setText("请求失败:" + e.getMessage());

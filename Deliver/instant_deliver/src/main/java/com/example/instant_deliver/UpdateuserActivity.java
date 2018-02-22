@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.topStatusTool;
@@ -61,7 +62,7 @@ public class UpdateuserActivity extends Activity {
 
                 final String name = username.getText().toString().trim();
                 if (name.length() < 2 || name.length() > 5) {
-                    Toast.makeText(UpdateuserActivity.this, "用户名长度不得小于2或大于5", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "用户名长度不得小于2或大于5", Toast.LENGTH_SHORT).show();
                 } else {
                     _User myuser = new _User();
                     myuser.setUsername(name);
@@ -72,13 +73,13 @@ public class UpdateuserActivity extends Activity {
                         @Override
                         public void done(BmobException e) {
                             if (e == null) {
-                                Toast.makeText(UpdateuserActivity.this, "更新成功", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplication(), "更新成功", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent();
                                 //设置返回结果
                                 setResult(2, intent);
                                 finish();
                             } else {
-                                Toast.makeText(UpdateuserActivity.this, "更新失败" + e.toString(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplication(), "更新失败" + e.toString(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

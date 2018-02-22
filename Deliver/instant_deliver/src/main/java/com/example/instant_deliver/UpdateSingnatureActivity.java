@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.topStatusTool;
@@ -57,7 +58,7 @@ public class UpdateSingnatureActivity extends Activity {
                 String token = sharedPreferences.getString("token", "");
                 final String name= singnature.getText().toString().trim();
                 if(name.length()<5||name.length()>20){
-                    Toast.makeText(UpdateSingnatureActivity.this,"长度不得小于5，大于20",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(),"长度不得小于5，大于20",Toast.LENGTH_SHORT).show();
                 }else {
                     _User myuser=new _User();
                     //设置新的签名
@@ -68,13 +69,13 @@ public class UpdateSingnatureActivity extends Activity {
                         @Override
                         public void done(BmobException e) {
                             if(e==null){
-                                Toast.makeText(UpdateSingnatureActivity.this,"更新成功",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplication(),"更新成功",Toast.LENGTH_SHORT).show();
                                 Intent intent=new Intent();
                                 //设置返回结果
                                 setResult(2,intent);
                                 finish();
                             }else {
-                                Toast.makeText(UpdateSingnatureActivity.this,"更新失败"+e.toString(),Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplication(),"更新失败"+e.toString(),Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

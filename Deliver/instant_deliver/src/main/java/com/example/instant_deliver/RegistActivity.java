@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.ActivityManagerTool;
@@ -169,7 +170,7 @@ public class RegistActivity extends Activity {
         if(em.length()>0&&StringRegexUtils.Validate(em,StringRegexUtils.email_regexp)&&pass.length()>5&&pass.length()<=24){
             //进行网络状态的验证
             if(!getConnState.isConn(this)){
-                Toast.makeText(RegistActivity.this,"当前网络不可用",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(),"当前网络不可用",Toast.LENGTH_LONG).show();
             }else{
                 user.signUp(new SaveListener<_User>() {
                     @Override

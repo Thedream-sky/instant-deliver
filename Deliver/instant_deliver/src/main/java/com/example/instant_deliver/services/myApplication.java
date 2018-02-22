@@ -1,18 +1,23 @@
 package com.example.instant_deliver.services;
-import android.app.Application;
 import android.util.Log;
+
+import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.tools.bmobinit;
-import com.hyphenate.chat.EMChatManager;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.easeui.EaseUI;
+
+import org.litepal.LitePal;
+import org.litepal.LitePalApplication;
+
+import cn.bmob.v3.BmobUser;
 
 
 /**
  * Created by King on 2018/1/16.
  */
 
-public class myApplication extends Application {
+public class myApplication extends LitePalApplication{
 
     @Override
     public void onCreate() {
@@ -21,6 +26,8 @@ public class myApplication extends Application {
         new bmobinit(this);
         //初始化环信设置
         initHuanxin();
+        //创建数据库
+        createDatabase();
     }
 
     private void initHuanxin() {
@@ -36,6 +43,20 @@ public class myApplication extends Application {
         //在做打包混淆时，关闭debug模式，避免消耗不必要的资源
         EMClient.getInstance().setDebugMode(true);
 
+    }
+    //创建数据库
+    private void createDatabase(){
+        //创建数据库
+        LitePal.getDatabase();
+    }
+
+    //获取当前对象
+    public _User getCurrentUser(){
+        _User user = BmobUser.getCurrentUser(_User.class);
+        if(user!=null){
+            return user;
+        }
+        return null;
     }
 
 }

@@ -1,18 +1,18 @@
 package com.example.instant_deliver;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.instant_deliver.beans.Message;
 import com.example.instant_deliver.fragments.contantFragment;
 import com.example.instant_deliver.fragments.homeFragment;
 import com.example.instant_deliver.fragments.messageFragment;
@@ -20,9 +20,16 @@ import com.example.instant_deliver.fragments.ownFragment;
 import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.topStatusTool;
 
+import org.litepal.crud.DataSupport;
+
+import java.util.List;
+
+
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
     private ImageView homeImage, messageImage, contactImage, ownImage, toput;
     private TextView homeText, messageText, contactText, ownText;
+    //消息提醒
+    private TextView message_clue;
     private homeFragment homefragment;
     private messageFragment messagefragment;
     private ownFragment ownfragment;
@@ -40,6 +47,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         ActivityManagerTool.pushActivity(this);
         //初始化
         init(savedInstanceState);
+
     }
 
     //控件初始化

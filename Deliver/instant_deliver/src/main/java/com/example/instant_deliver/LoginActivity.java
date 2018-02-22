@@ -21,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.StringRegexUtils;
@@ -270,7 +271,7 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
             public void onError(int code, String message) {
                 saveLoginhuanxin(false);
                 Log.d("main", "登录聊天服务器失败！");
-                Toast.makeText(LoginActivity.this,"登录失败，请查看账号或者密码是否正确",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(),"登录失败，请查看账号或者密码是否正确",Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -320,9 +321,9 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                                                         @Override
                                                         public void done(BmobException e) {
                                                             if (e == null) {
-                                                                Toast.makeText(LoginActivity.this, "验证邮件已经重新发送，请注意查收", Toast.LENGTH_LONG).show();
+                                                                Toast.makeText(getApplication(), "验证邮件已经重新发送，请注意查收", Toast.LENGTH_LONG).show();
                                                             } else {
-                                                                Toast.makeText(LoginActivity.this, "验证邮件请求重新发送失败", Toast.LENGTH_LONG).show();
+                                                                Toast.makeText(getApplication(), "验证邮件请求重新发送失败", Toast.LENGTH_LONG).show();
 
                                                             }
                                                         }
@@ -421,7 +422,7 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                 @Override
                 public void done(String s, BmobException e) {
                     if (e != null) {
-                        Toast.makeText(LoginActivity.this, "头像获取失败", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), "头像获取失败", Toast.LENGTH_SHORT).show();
                     }
                 }
 

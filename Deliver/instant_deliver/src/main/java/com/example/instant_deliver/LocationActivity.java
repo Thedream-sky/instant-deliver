@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
@@ -89,7 +90,7 @@ public class LocationActivity extends Activity implements PoiSearch.OnPoiSearchL
             if (amapLocation != null) {
                 progressDialog.dismiss();
                 if (amapLocation.getErrorCode() == 0) {
-                    Toast.makeText(LocationActivity.this, "定位成功", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "定位成功", Toast.LENGTH_SHORT).show();
                     amapLocation.getLocationType();//获取当前定位结果来源，如网络定位结果，详见定位类型表
                     lat = amapLocation.getLatitude();//获取纬度
                     lon = amapLocation.getLongitude();//获取经度
@@ -124,7 +125,7 @@ public class LocationActivity extends Activity implements PoiSearch.OnPoiSearchL
                     //搜索周边
                     dosearchQueryAround("大学","141201",citycode,0);
                 } else {
-                    Toast.makeText(LocationActivity.this, "定位失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "定位失败", Toast.LENGTH_SHORT).show();
                 }
             }
         }

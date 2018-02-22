@@ -12,6 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans.Order;
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.beans.myAddress;
@@ -140,9 +141,9 @@ public class putActivity extends Activity implements View.OnClickListener {
         String adss = address.getText().toString().trim();
         String pnum = phone.getText().toString().trim();
         if (infor.equals("") || infor == null || adss.equals("") || adss == null || pnum.equals("") || pnum == null) {
-            Toast.makeText(putActivity.this, "不能有空", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "不能有空", Toast.LENGTH_SHORT).show();
         } else if (!StringRegexUtils.Validate(pnum, StringRegexUtils.phone_regexp)) {
-            Toast.makeText(putActivity.this, "手机号格式不正确", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "手机号格式不正确", Toast.LENGTH_SHORT).show();
         } else {
             initorder();
         }
@@ -181,10 +182,10 @@ public class putActivity extends Activity implements View.OnClickListener {
             @Override
             public void done(String s, BmobException e) {
                 if (e == null) {
-                    Toast.makeText(putActivity.this, "发布成功", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "发布成功", Toast.LENGTH_SHORT).show();
                     finish();
                 } else {
-                    Toast.makeText(putActivity.this, "发布失败"+e.toString(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "发布失败"+e.toString(), Toast.LENGTH_SHORT).show();
                 }
             }
 

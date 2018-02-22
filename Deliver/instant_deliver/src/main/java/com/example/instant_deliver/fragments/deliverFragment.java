@@ -15,12 +15,15 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.R;
 import com.example.instant_deliver.beans.Order;
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.tools.ListviewForScrollView;
 import com.example.instant_deliver.tools.getConnState;
 import com.example.instant_deliver.tools.orderAdapter;
+import com.example.instant_deliver.tools.orderListTool;
+import com.example.instant_deliver.tools.usersManager;
 import com.handmark.pulltorefresh.library.ILoadingLayout;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
@@ -32,6 +35,7 @@ import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
+import cn.bmob.v3.listener.QueryListener;
 import cn.bmob.v3.listener.UpdateListener;
 
 /**
@@ -66,7 +70,7 @@ public class deliverFragment extends Fragment {
                     int pos = msg.arg1;
                     updateOrder();
                 } else {
-                    Toast.makeText(getActivity(), "当前网络不可用", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplication(), "当前网络不可用", Toast.LENGTH_SHORT).show();
                 }
             }
             //页面加载
@@ -94,13 +98,14 @@ public class deliverFragment extends Fragment {
                             scrollView.onRefreshComplete();
                             if (list == null || list.size() == 0) {
                                 warn.setVisibility(View.VISIBLE);
+                                totallist =new ArrayList<Order>();
                             } else {
                                 warn.setVisibility(View.GONE);
                                 totallist = list;
-                                adapter = new orderAdapter(list, getActivity().getApplicationContext(), callBack);
-                                adapter.notifyDataSetChanged();
-                                mylistView.setAdapter(adapter);
                             }
+                            adapter = new orderAdapter(totallist, getActivity().getApplicationContext(), callBack);
+                            adapter.notifyDataSetChanged();
+                            mylistView.setAdapter(adapter);
                         }
                     });
                 }
@@ -139,13 +144,13 @@ public class deliverFragment extends Fragment {
 
     //修改订单状态
     private void updateOrder() {
-        _User reciver = BmobUser.getCurrentUser(_User.class);
+        final _User reciver = BmobUser.getCurrentUser(_User.class);
         Order order1 = new Order();
         //判断是否发出与抢单人是否为同一人
         if (order.getLauncher()
                 .getObjectId()
                 .equals(reciver.getObjectId())) {
-            Toast.makeText(getActivity(), "不能接自己发出的单", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity().getApplication(), "不能接自己发出的单", Toast.LENGTH_LONG).show();
         } else if (order.getOrderState() == 1) {
             //状态设置为接单中
             order1.setOrderState(2);
@@ -156,11 +161,15 @@ public class deliverFragment extends Fragment {
                 @Override
                 public void done(BmobException e) {
                     if (e == null) {
+                        //添加好友
+                        usersManager.addFriend(reciver.getObjectId(),order.getLauncher().getObjectId());
+                        //保存订单好友关系表
+                        orderListTool.saveState(getActivity(),reciver.getObjectId(),order.getLauncher().getObjectId(),order.getObjectId());
                         totallist.remove(pos);
                         adapter.notifyDataSetChanged();
-                        Toast.makeText(getActivity(), "抢单成功！！！", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity().getApplication(), "抢单成功！！！", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(getActivity(), "抢单失败" + e.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity().getApplication(), "抢单失败" + e.toString(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -168,7 +177,7 @@ public class deliverFragment extends Fragment {
             //已被抢单，则被清除
             totallist.remove(pos);
             adapter.notifyDataSetChanged();
-            Toast.makeText(getActivity(), "抢单失败，已经被抢单", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplication(), "抢单失败，已经被抢单", Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -192,7 +201,7 @@ public class deliverFragment extends Fragment {
             //获取数据请求
             handler.sendEmptyMessageDelayed(1, 500);
         } else {
-            Toast.makeText(getActivity(), "当前网络不可用", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplication(), "当前网络不可用", Toast.LENGTH_SHORT).show();
         }
         //监听事件
         listenr();
@@ -213,7 +222,14 @@ public class deliverFragment extends Fragment {
             public void Buttonclick(View view) {
                 //当前位置
                 pos = Integer.parseInt("" + view.getTag());
-                order = totallist.get(pos);
+                //每次点击都要实时的获取当前状态
+                BmobQuery<Order> query =new BmobQuery<>();
+                query.getObject(totallist.get(pos).getObjectId(), new QueryListener<Order>() {
+                    @Override
+                    public void done(Order myorder, BmobException e) {
+                        order = myorder;
+                    }
+                });
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setMessage("确定抢此单!");
@@ -266,7 +282,7 @@ public class deliverFragment extends Fragment {
                     handler.sendEmptyMessageDelayed(1, 1000);
                 } else {
                     scrollView.onRefreshComplete();
-                    Toast.makeText(getActivity(), "当前网络不可用", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplication(), "当前网络不可用", Toast.LENGTH_SHORT).show();
                 }
                 scrollView.getRefreshableView();
 
@@ -286,7 +302,7 @@ public class deliverFragment extends Fragment {
                     handler.sendEmptyMessageDelayed(1, 1000);
                 } else {
                     scrollView.onRefreshComplete();
-                    Toast.makeText(getActivity(), "当前网络不可用", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplication(), "当前网络不可用", Toast.LENGTH_SHORT).show();
                 }
                 scrollView.getRefreshableView();
             }

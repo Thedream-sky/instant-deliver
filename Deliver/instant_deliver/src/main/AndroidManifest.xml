@@ -27,15 +27,14 @@
 
     <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
         tools:ignore="MockLocation" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
@@ -69,7 +68,9 @@
         <activity android:name=".RegistActivity" />
         <activity android:name=".FindBackActivity" />
         <activity android:name=".putActivity" />
-        <activity android:name=".BindActivity" android:exported="true"/>
+        <activity
+            android:name=".BindActivity"
+            android:exported="true" />
         <activity android:name=".UpdateuserActivity" />
         <activity android:name=".UpdateSingnatureActivity" />
         <activity android:name=".bindphoneActivity" />
@@ -79,7 +80,9 @@
         <activity android:name=".showAddressActivity" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>　
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        　
+
         <!--
          ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -92,7 +95,7 @@
         <meta-data
             android:name="EASEMOB_APPKEY"
             android:value="@string/huanxin_AppKey" />
-        <!-- 声明SDK所需的service SDK核心功能-->
+        <!-- 声明SDK所需的service SDK核心功能 -->
         <service
             android:name="com.hyphenate.chat.EMChatService"
             android:exported="true" />
@@ -104,6 +107,7 @@
         <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
                 <data android:scheme="package" />
             </intent-filter>
             <!-- 可选filter -->
@@ -121,9 +125,10 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/photo_provider">
-            </meta-data>
+                android:resource="@xml/photo_provider"></meta-data>
         </provider>
+
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>

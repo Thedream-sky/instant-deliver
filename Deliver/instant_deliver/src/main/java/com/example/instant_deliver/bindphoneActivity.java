@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.identifyView.Topbar;
 import com.example.instant_deliver.tools.StringRegexUtils;
@@ -108,7 +109,7 @@ public class bindphoneActivity extends Activity implements View.OnClickListener 
     //确认验证码，绑定手机号
     private void bindphone() {
         if (code.getText().toString().trim().length() != 6) {
-            Toast.makeText(bindphoneActivity.this, "验证码不正确" , Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "验证码不正确" , Toast.LENGTH_SHORT).show();
         } else {
             BmobSMS.verifySmsCode(phonenum.getText().toString().trim(), code.getText().toString().trim(), new UpdateListener() {
                 @Override
@@ -124,19 +125,19 @@ public class bindphoneActivity extends Activity implements View.OnClickListener 
                             @Override
                             public void done(BmobException e) {
                                 if (e == null) {
-                                    Toast.makeText(bindphoneActivity.this, "绑定成功", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplication(), "绑定成功", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent();
                                     //设置返回结果
                                     setResult(2, intent);
                                     finish();
                                 } else {
-                                    Toast.makeText(bindphoneActivity.this, "绑定失败" + e.toString(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplication(), "绑定失败" + e.toString(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
                         //验证码错误
                     } else {
-                        Toast.makeText(bindphoneActivity.this, "验证码错误" + e.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), "验证码错误" + e.toString(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -154,7 +155,7 @@ public class bindphoneActivity extends Activity implements View.OnClickListener 
                 @Override
                 public void done(Integer integer, BmobException e) {
                     if (e == null) {
-                        Toast.makeText(bindphoneActivity.this, "验证码已经发出，请注意查收", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplication(), "验证码已经发出，请注意查收", Toast.LENGTH_LONG).show();
                         //开始倒计时
                         timer.start();
                     } else {
@@ -164,9 +165,9 @@ public class bindphoneActivity extends Activity implements View.OnClickListener 
             });
         } else {
             if (phone == null || phone.equals("")) {
-                Toast.makeText(bindphoneActivity.this, "手机号能为空", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "手机号能为空", Toast.LENGTH_LONG).show();
             } else if (!StringRegexUtils.Validate(phone, StringRegexUtils.phone_regexp)) {
-                Toast.makeText(bindphoneActivity.this, "手机号格式不对", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplication(), "手机号格式不对", Toast.LENGTH_LONG).show();
             }
         }
     }

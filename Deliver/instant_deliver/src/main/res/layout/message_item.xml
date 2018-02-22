@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="160dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/msgDel"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#FFFFFF"
+            android:background="#f5142a"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/msgTop"
+            android:gravity="center"
+            android:text="置顶"
+            android:textColor="#FFFFFF"
+            android:background="#c1b4b3"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/friendid"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/friendImguri"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:id="@+id/msgCount"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/textview_round_border"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/friendName"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/lastMessage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:paddingRight="2dp">
+            <TextView
+                android:gravity="center_vertical|right"
+                android:id="@+id/lastDate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

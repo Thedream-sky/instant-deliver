@@ -33,4 +33,6 @@ public class EaseConstant {
     
     public static final String EXTRA_CHAT_TYPE = "chatType";
     public static final String EXTRA_USER_ID = "userId";
+    /** 用户呢称*/
+    public static final String EXTRA_USER_NAME = "userName";
 }

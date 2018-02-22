@@ -6,8 +6,9 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;;
-import android.widget.Toast;
+import android.widget.EditText;
+import android.widget.Toast;;
+
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
@@ -68,7 +69,7 @@ public class getLocationActivity extends Activity implements View.OnClickListene
             if (amapLocation != null) {
                 progressDialog.dismiss();
                 if (amapLocation.getErrorCode() == 0) {
-                    Toast.makeText(getLocationActivity.this, "定位成功", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "定位成功", Toast.LENGTH_SHORT).show();
                     amapLocation.getLocationType();//获取当前定位结果来源，如网络定位结果，详见定位类型表
                     lat = amapLocation.getLatitude();//获取纬度
                     lon = amapLocation.getLongitude();//获取经度
@@ -97,7 +98,7 @@ public class getLocationActivity extends Activity implements View.OnClickListene
                     //显示定位图标
                     showmark();
                 } else {
-                    Toast.makeText(getLocationActivity.this, "定位失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "定位失败", Toast.LENGTH_SHORT).show();
                 }
             }
         }
@@ -264,7 +265,7 @@ public class getLocationActivity extends Activity implements View.OnClickListene
         String adtails = addressdetail.getText().toString();
 
         if (name.equals("") || name == null || ads.equals("") || ads == null || adtails.equals("") || adtails == null) {
-            Toast.makeText(getLocationActivity.this, "地址或者用户名不能有空", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "地址或者用户名不能有空", Toast.LENGTH_SHORT).show();
         } else {
             _User currency = BmobUser.getCurrentUser(_User.class);
             myAddress myaddress = new myAddress();
@@ -276,11 +277,11 @@ public class getLocationActivity extends Activity implements View.OnClickListene
                 @Override
                 public void done(String s, BmobException e) {
                     if (e == null) {
-                        Toast.makeText(getLocationActivity.this, "地址保存成功", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), "地址保存成功", Toast.LENGTH_SHORT).show();
                         setResult(200);
                         finish();
                     } else {
-                        Toast.makeText(getLocationActivity.this, "地址保存失败" + e.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), "地址保存失败" + e.toString(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });

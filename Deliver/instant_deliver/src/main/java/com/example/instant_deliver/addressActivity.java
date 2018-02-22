@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.beans.myAddress;
 import com.example.instant_deliver.identifyView.Topbar;
@@ -39,7 +40,7 @@ public class addressActivity extends Activity implements View.OnClickListener {
                     //查询地址
                     queryAdress();
                 }else {
-                    Toast.makeText(addressActivity.this, "当前网络不可用", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplication(), "当前网络不可用", Toast.LENGTH_SHORT).show();
 
                 }
 

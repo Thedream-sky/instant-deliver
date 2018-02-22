@@ -57,9 +57,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ListView
+                        android:id="@+id/message_listView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-
                     </ListView>
                 </LinearLayout>
             </LinearLayout>

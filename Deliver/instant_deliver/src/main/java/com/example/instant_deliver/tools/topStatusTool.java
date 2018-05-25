@@ -3,6 +3,7 @@ package com.example.instant_deliver.tools;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.Build;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -15,6 +16,16 @@ import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 public class topStatusTool {
     public static void applyKitKatTranslucency(Activity activity,int themeColor) {
+        // KitKat translucent navigation/status bar.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            setTranslucentStatus(true,activity);
+            SystemBarTintManager mTintManager = new SystemBarTintManager(activity);
+            mTintManager.setStatusBarTintEnabled(true);
+            mTintManager.setStatusBarTintResource(themeColor);//通知栏所需颜色
+        }
+    }
+
+    public static void applyKitKatTranslucencyForAppCompatActivity(AppCompatActivity activity, int themeColor) {
         // KitKat translucent navigation/status bar.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             setTranslucentStatus(true,activity);

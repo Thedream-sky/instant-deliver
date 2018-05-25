@@ -24,6 +24,7 @@ import com.hyphenate.chat.EMMessage;
 import com.hyphenate.easeui.R;
 import com.hyphenate.easeui.model.EaseImageCache;
 import com.hyphenate.easeui.utils.EaseLoadLocalBigImgTask;
+import com.hyphenate.easeui.utils.topStatusTool;
 import com.hyphenate.easeui.widget.photoview.EasePhotoView;
 import com.hyphenate.util.EMLog;
 import com.hyphenate.util.ImageUtils;
@@ -59,6 +60,8 @@ public class EaseShowBigImageActivity extends EaseBaseActivity {
 		setContentView(R.layout.ease_activity_show_big_image);
 		super.onCreate(savedInstanceState);
 
+		//解决沉浸式状态栏问题
+		topStatusTool.applyKitKatTranslucency(this,R.color.black_deep);
 		image = (EasePhotoView) findViewById(R.id.image);
 		ProgressBar loadLocalPb = (ProgressBar) findViewById(R.id.pb_load_local);
 		default_res = getIntent().getIntExtra("default_image", R.drawable.ease_default_avatar);
@@ -102,8 +105,7 @@ public class EaseShowBigImageActivity extends EaseBaseActivity {
 	
 	/**
 	 * download image
-	 * 
-	 * @param remoteFilePath
+	 *
 	 */
 	@SuppressLint("NewApi")
 	private void downloadImage(final String msgId) {

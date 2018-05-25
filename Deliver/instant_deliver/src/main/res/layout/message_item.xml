@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageItem"
     android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="80dp">
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="160dp"
+        android:layout_width="80dp"
         android:layout_height="match_parent">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/msg_uuid"
+            />
         <TextView
             android:id="@+id/msgDel"
             android:gravity="center"
@@ -15,14 +21,14 @@
             android:background="#f5142a"
             android:layout_width="80dp"
             android:layout_height="match_parent" />
-        <TextView
+       <!-- <TextView
             android:id="@+id/msgTop"
             android:gravity="center"
             android:text="置顶"
             android:textColor="#FFFFFF"
             android:background="#c1b4b3"
             android:layout_width="80dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" />-->
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -42,9 +48,11 @@
                 <ImageView
                     android:id="@+id/friendImguri"
                     android:layout_width="50dp"
-                    android:layout_height="50dp"/>
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"/>
             </LinearLayout>
             <TextView
+                android:visibility="invisible"
                 android:layout_marginTop="2dp"
                 android:layout_gravity="center"
                 android:id="@+id/msgCount"

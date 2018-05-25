@@ -608,7 +608,6 @@ public class BindActivity extends Activity implements View.OnClickListener {
                 Intent intent = new Intent(this, UpdateuserActivity.class);
                 intent.putExtra("name",bindUsername.getText().toString());
                 startActivityForResult(intent, 1);
-                ;
                 break;
             case R.id.bind_singnature:
                 //跳转到签名更新页面
@@ -627,7 +626,6 @@ public class BindActivity extends Activity implements View.OnClickListener {
                     Intent intent3 = new Intent(this, UnbindActivity.class);
                     startActivityForResult(intent3, 1);
                 }
-                ;
                 break;
             case R.id.bind_headImg:
                 //异步处理

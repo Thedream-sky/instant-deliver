@@ -6,22 +6,35 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.instant_deliver.R;
+import com.example.instant_deliver.beans._User;
+import com.example.instant_deliver.beans.identify;
 import com.example.instant_deliver.fragments.contantFragment;
 import com.example.instant_deliver.fragments.homeFragment;
 import com.example.instant_deliver.fragments.messageFragment;
 import com.example.instant_deliver.fragments.ownFragment;
+import com.example.instant_deliver.services.myApplication;
 import com.example.instant_deliver.tools.ActivityManagerTool;
 import com.example.instant_deliver.tools.topStatusTool;
 
+import java.util.List;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.FindListener;
+
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
+    private _User user;
+    private boolean identity;
     private ImageView homeImage, messageImage, contactImage, ownImage, toput;
     private TextView homeText, messageText, contactText, ownText;
     private LinearLayout homeLayout, toputLayout, contactLayout,ownLayout;
@@ -45,11 +58,36 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         ActivityManagerTool.pushActivity(this);
         //初始化
         init(savedInstanceState);
+        //获取用户是否实名验证
+        identifyisShow();
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(data!=null&&data.getStringExtra("identify").equals("identifySuccess")){
+            identifyisShow();
+        }
+    }
+
+    private void identifyisShow() {
+        BmobQuery<identify> query =new BmobQuery<>();
+        query.addWhereEqualTo("userid",user.getObjectId());
+        query.findObjects(new FindListener<identify>() {
+            @Override
+            public void done(List<identify> list, BmobException e) {
+                if(list!=null&&list.size()>0){
+                    identity = true;
+                }else {
+                    identity = false;
+                }
+            }
+        });
+    }
     //控件初始化
     private void init(Bundle savedInstanceState) {
+        user = new myApplication().getCurrentUser();
         //控件初始化
         homeImage = (ImageView) findViewById(R.id.homeImage);
         messageImage = (ImageView) findViewById(R.id.messageImage);
@@ -69,19 +107,45 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         toputLayout = (LinearLayout) findViewById(R.id.toputLayout);
 
         //监听事件
-       /* homeImage.setOnClickListener(this);
-        messageImage.setOnClickListener(this);
-        contactImage.setOnClickListener(this);
-        ownImage.setOnClickListener(this);*/
         homeLayout.setOnClickListener(this);
         msgLayout.setOnClickListener(this);
         contactLayout.setOnClickListener(this);
         ownLayout.setOnClickListener(this);
-        toput.setOnClickListener(new View.OnClickListener() {
+        toputLayout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, putActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                if(identity){
+                   if(user.getMobilePhoneNumber()==null||!user.getMobilePhoneNumberVerified()){
+                       Toast.makeText(getApplicationContext(),"请绑定手机号",Toast.LENGTH_SHORT).show();
+                       Intent intent = new Intent(MainActivity.this, BindActivity.class);
+                       startActivity(intent);
+                   }else {
+                       Intent intent = new Intent(MainActivity.this, putActivity.class);
+                       startActivity(intent);
+                   }
+                }else {
+                    Toast.makeText(getApplicationContext(),"请实名验证",Toast.LENGTH_SHORT).show();
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction transaction = fragmentManager.beginTransaction();
+                    //隐藏所有fragment
+                    if (homefragment != null) {
+                        transaction.hide(homefragment);
+                    }
+                    if (messagefragment != null) {
+                        transaction.hide(messagefragment);
+                    }
+                    if (ownfragment != null) {
+                        transaction.hide(ownfragment);
+                    }
+                    if (contantfragment != null) {
+                        transaction.hide(contantfragment);
+                    }
+                    initState();
+                    ownImage.setImageResource(R.drawable.ic_person_press_36dp);
+                    ownText.setTextColor(Color.parseColor("#000000"));
+                    transaction.show(ownfragment);
+                    transaction.commit();
+                }
             }
         });
 
@@ -92,7 +156,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     //默认状态
     private void setDefault(Bundle savedInstanceState) {
         homeImage.setImageResource(R.drawable.ic_home_black_36dp);
-        homeText.setTextColor(Color.parseColor("#2196F3"));
+        homeText.setTextColor(Color.parseColor("#000000"));
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         if(savedInstanceState == null){
@@ -123,10 +187,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         contactImage.setImageResource(R.drawable.ic_group_brown_100_36dp);
         ownImage.setImageResource(R.drawable.ic_person_outline_brown_100_36dp);
 
-        homeText.setTextColor(Color.parseColor("#a47c7979"));
-        messageText.setTextColor(Color.parseColor("#a47c7979"));
-        contactText.setTextColor(Color.parseColor("#a47c7979"));
-        ownText.setTextColor(Color.parseColor("#a47c7979"));
+        homeText.setTextColor(Color.parseColor("#FFFFFF"));
+        messageText.setTextColor(Color.parseColor("#FFFFFF"));
+        contactText.setTextColor(Color.parseColor("#FFFFFF"));
+        ownText.setTextColor(Color.parseColor("#FFFFFF"));
 
     }
 
@@ -153,22 +217,22 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         switch (v.getId()) {
             case R.id.homeLayout:
                 homeImage.setImageResource(R.drawable.ic_home_black_36dp);
-                homeText.setTextColor(Color.parseColor("#2196F3"));
+                homeText.setTextColor(Color.parseColor("#000000"));
                 transaction.show(homefragment);
                 break;
             case R.id.msgLayout:
                 messageImage.setImageResource(R.drawable.ic_message_press);
-                messageText.setTextColor(Color.parseColor("#2196F3"));
+                messageText.setTextColor(Color.parseColor("#000000"));
                 transaction.show(messagefragment);
                 break;
             case R.id.contactLayout:
                 contactImage.setImageResource(R.drawable.ic_group_press);
-                contactText.setTextColor(Color.parseColor("#2196F3"));
+                contactText.setTextColor(Color.parseColor("#000000"));
                 transaction.show(contantfragment);
                 break;
             case R.id.ownLayout:
                 ownImage.setImageResource(R.drawable.ic_person_press_36dp);
-                ownText.setTextColor(Color.parseColor("#2196F3"));
+                ownText.setTextColor(Color.parseColor("#000000"));
                 transaction.show(ownfragment);
                 break;
         }

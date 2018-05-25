@@ -42,7 +42,8 @@ public class orderAdapter extends BaseAdapter  implements View.OnClickListener {
 
     //定义回调接口
     public interface CallBack{
-        public void Buttonclick(View view);
+        void Buttonclick(View view);
+        void AddressClick(View view);
     }
 
     @Override
@@ -85,6 +86,9 @@ public class orderAdapter extends BaseAdapter  implements View.OnClickListener {
         viewHolder.getorder.setOnClickListener(this);
         viewHolder.getorder.setTag(position);
 
+        viewHolder.address.setOnClickListener(this);
+        viewHolder.address.setTag(order.getAdsObject());
+
         //送达地址
         viewHolder.address.setText("送达地址："+order.getAdress());
         loadImage.loadImageGlide(context,order.getLauncherhead(),viewHolder.imageViewPlus);
@@ -108,7 +112,14 @@ public class orderAdapter extends BaseAdapter  implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         //实现接口里的方法
-        mCallBack.Buttonclick(v);
+        switch (v.getId()){
+            case R.id.order_getorder:
+                mCallBack.Buttonclick(v);
+                break;
+            case R.id.order_address:
+                mCallBack.AddressClick(v);
+                break;
+        }
     }
 
     //内部类（内容提供者）

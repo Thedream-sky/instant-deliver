@@ -11,8 +11,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -56,6 +58,8 @@ import com.hyphenate.exceptions.HyphenateException;
 import com.hyphenate.util.EMLog;
 import com.hyphenate.util.PathUtil;
 
+import org.json.JSONException;
+
 import java.io.File;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -79,7 +83,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
      * params to fragment
      */
     protected Bundle fragmentArgs;
-    protected int chatType;
+    protected Integer chatType;
     //这个实际是userid
     protected String toChatUsername;
     protected String toChatMyUsername;
@@ -586,7 +590,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
             // if the message is for current conversation
             if (username.equals(toChatUsername) || message.getTo().equals(toChatUsername) || message.conversationId().equals(toChatUsername)) {
                 messageList.refreshSelectLast();
-                EaseUI.getInstance().getNotifier().vibrateAndPlayTone(message);
+                //EaseUI.getInstance().getNotifier().vibrateAndPlayTone(message);
                 conversation.markMessageAsRead(message.getMsgId());
             } else {
                 EaseUI.getInstance().getNotifier().onNewMsg(message);
@@ -611,6 +615,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
         if(isMessageListInited) {
             messageList.refresh();
         }
+
     }
 
     @Override
@@ -623,6 +628,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
     @Override
     public void onMessageChanged(EMMessage emMessage, Object change) {
         if(isMessageListInited) {
+            //orderListTool.saveMsgtoDB(getActivity(),eMsg.getFrom(),eMsg.getTo(), MessageTool.msgTransform(eMsg));
             messageList.refresh();
         }
     }
@@ -863,8 +869,14 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
                 + System.currentTimeMillis() + ".jpg");
         //noinspection ResultOfMethodCallIgnored
         cameraFile.getParentFile().mkdirs();
+
+        Uri uri = Uri.fromFile(cameraFile);
+        //当安卓版本大于6.0时
+        if(Build.VERSION.SDK_INT > 24){
+            uri = FileProvider.getUriForFile(getActivity(),"com.example.instant_deliver.fileprovider", cameraFile);
+        }
         startActivityForResult(
-                new Intent(MediaStore.ACTION_IMAGE_CAPTURE).putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(cameraFile)),
+                new Intent(MediaStore.ACTION_IMAGE_CAPTURE).putExtra(MediaStore.EXTRA_OUTPUT, uri),
                 REQUEST_CODE_CAMERA);
     }
 

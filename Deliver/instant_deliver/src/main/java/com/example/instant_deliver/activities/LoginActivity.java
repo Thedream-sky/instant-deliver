@@ -37,6 +37,7 @@ import org.litepal.crud.DataSupport;
 
 import java.io.File;
 import java.util.List;
+import java.util.UUID;
 
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
@@ -456,11 +457,16 @@ public class LoginActivity extends CheckPermissionsActivity implements View.OnCl
                         message.setState(msgBmob.getState());
                         message.setImageUri(msgBmob.getImageUri());
                         message.setDate(msgBmob.getDate());
-                        message.setObjectid(msgBmob.getObjectId());
+                        message.setFriendId(msgBmob.getObjectId());
                         //查询数据库
                         List<com.example.instant_deliver.beans.Message> list2 = DataSupport.where("objectid = ? and ownid = ?", msgBmob.getObjectId(),user.getObjectId()).find(com.example.instant_deliver.beans.Message.class);
                         if(list2 ==null || list2.size() <= 1){
+                            //唯一标准符
+                            message.setUuid(UUID.randomUUID().toString());
                             message.saveOrUpdate();
+                        }else {
+                            message.setUuid(list2.get(0).getUuid());
+                            message.updateAll("uuid = ?",list2.get(0).getUuid());
                         }
                     }
                 }

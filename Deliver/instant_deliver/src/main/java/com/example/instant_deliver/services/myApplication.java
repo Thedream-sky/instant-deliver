@@ -46,6 +46,7 @@ public class myApplication extends LitePalApplication{
     }
     //创建数据库
     private void createDatabase(){
+        //LitePal.initialize(this);
         //创建数据库
         LitePal.getDatabase();
     }

@@ -13,6 +13,9 @@ public class myAddress extends BmobObject{
     private String address;
     //地址用户名
     private String name;
+    
+    private double lat;//纬度
+    private double lon;//经度
 
     public _User getUsers() {
         return users;
@@ -37,5 +40,21 @@ public class myAddress extends BmobObject{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLon() {
+        return lon;
+    }
+
+    public void setLon(double lon) {
+        this.lon = lon;
     }
 }

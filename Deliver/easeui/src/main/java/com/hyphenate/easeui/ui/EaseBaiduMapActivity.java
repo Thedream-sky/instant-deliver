@@ -47,6 +47,7 @@ import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.utils.CoordinateConverter;
 import com.hyphenate.easeui.R;
+import com.hyphenate.easeui.utils.topStatusTool;
 
 public class EaseBaiduMapActivity extends EaseBaseActivity {
 
@@ -54,8 +55,9 @@ public class EaseBaiduMapActivity extends EaseBaseActivity {
 	static MapView mMapView = null;
 	FrameLayout mMapViewContainer = null;
 	LocationClient mLocClient;
+	//定位服务监听
 	public MyLocationListenner myListener = new MyLocationListenner();
-
+	//发送按钮
 	Button sendButton = null;
 
 	EditText indexText = null;
@@ -86,9 +88,14 @@ public class EaseBaiduMapActivity extends EaseBaseActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//解决沉浸式状态栏问题
+		topStatusTool.applyKitKatTranslucency(this,R.color.deepskyblue);
+
 		instance = this;
 		//initialize SDK with context, should call this before setContentView
-        SDKInitializer.initialize(getApplicationContext());  
+		//初始化
+        SDKInitializer.initialize(getApplicationContext());
+
 		setContentView(R.layout.ease_activity_baidumap);
 		mMapView = (MapView) findViewById(R.id.bmapView);
 		sendButton = (Button) findViewById(R.id.btn_location_send);
@@ -103,6 +110,7 @@ public class EaseBaiduMapActivity extends EaseBaseActivity {
 			mMapView = new MapView(this, new BaiduMapOptions());
 			mBaiduMap.setMyLocationConfigeration(new MyLocationConfiguration(
 					mCurrentMode, true, null));
+			//弹出提示框
 			showMapWithLocationClient();
 		} else {
 			double longtitude = intent.getDoubleExtra("longitude", 0);
@@ -113,11 +121,14 @@ public class EaseBaiduMapActivity extends EaseBaseActivity {
 							.target(p).build()));
 			showMap(latitude, longtitude, address);
 		}
+
 		IntentFilter iFilter = new IntentFilter();
 		iFilter.addAction(SDKInitializer.SDK_BROADTCAST_ACTION_STRING_PERMISSION_CHECK_ERROR);
 		iFilter.addAction(SDKInitializer.SDK_BROADCAST_ACTION_STRING_NETWORK_ERROR);
 		mBaiduReceiver = new BaiduSDKReceiver();
+		//服务开启
 		registerReceiver(mBaiduReceiver, iFilter);
+
 	}
 
 	private void showMap(double latitude, double longtitude, String address) {
@@ -157,7 +168,7 @@ public class EaseBaiduMapActivity extends EaseBaseActivity {
 
 		mLocClient = new LocationClient(this);
 		mLocClient.registerLocationListener(myListener);
-
+		Log.d("ap", "大事大事");
 		LocationClientOption option = new LocationClientOption();
 		option.setOpenGps(true);// open gps
 		// option.setCoorType("bd09ll"); 
@@ -193,6 +204,7 @@ public class EaseBaiduMapActivity extends EaseBaseActivity {
 		if (mLocClient != null)
 			mLocClient.stop();
 		mMapView.onDestroy();
+		//关闭服务
 		unregisterReceiver(mBaiduReceiver);
 		super.onDestroy();
 	}

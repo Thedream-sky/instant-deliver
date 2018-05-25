@@ -26,7 +26,7 @@ public class Topbar extends RelativeLayout {
     private TextView tvTitle;
     private float titleTextSize;
     private int titleColor;
-    private String title;
+    private String title ;
 
 
     private TextView rightText;
@@ -40,9 +40,10 @@ public class Topbar extends RelativeLayout {
     private boolean flag;
     //接口
     public  interface topbarClickListener{
-        public void leftclick();
-        public void rightclick();
+        void leftclick();
+        void rightclick();
     }
+
     public void setOnTopbarClickListener(topbarClickListener listener){
         this.listener=listener;
     }
@@ -53,9 +54,7 @@ public class Topbar extends RelativeLayout {
 
         TypedArray ta=context.obtainStyledAttributes(attrs, R.styleable.Topbar);
 
-
         leftBackground=ta.getDrawable(R.styleable.Topbar_leftTextBackground);
-
         titleColor=ta.getColor(R.styleable.Topbar_titleColor,0);
         titleTextSize=ta.getDimension(R.styleable.Topbar_titleTextsize,10);
         title=ta.getString(R.styleable.Topbar_title);

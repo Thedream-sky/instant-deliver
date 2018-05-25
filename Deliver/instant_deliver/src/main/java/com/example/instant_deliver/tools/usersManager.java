@@ -23,15 +23,19 @@ import cn.bmob.v3.listener.SaveListener;
 
 public class usersManager {
     //获取好友列表
-    public static List<String> getAllfriends() throws HyphenateException {
-        return EMClient.getInstance().contactManager().getAllContactsFromServer();
+    public static List<String> getAllfriends()  {
+        List<String> list =null;
+        try {
+            list = EMClient.getInstance().contactManager().getAllContactsFromServer();
+        } catch (HyphenateException e) {
+           Log.e("eu",e.getMessage());
+        }
+        return list;
     }
 
     //添加好友关系
     public static void addFriend(String idOne, String idTwo){
         final String toadd = idTwo;
-        Log.i("hash",""+idOne.hashCode());
-        Log.i("hash",""+idTwo.hashCode());
         //默认关系表里前者的哈希值小于或等于后者,必须遵守
         if(idOne.hashCode()>idTwo.hashCode()){
             String temp = idOne;
@@ -85,6 +89,30 @@ public class usersManager {
                 }
             }
         });
+    }
+
+    //查找好友关系id
+       public String findFriend(String idOne, String idTwo){
+           final String[] friendId = new String[1];
+           //默认关系表里前者的哈希值小于或等于后者,必须遵守
+           if(idOne.hashCode()>idTwo.hashCode()){
+               String temp = idOne;
+               idOne = idTwo;
+               idTwo = temp;
+           }
+           BmobQuery<Friends> query =new BmobQuery<>();
+           query.addWhereEqualTo("idOne",idOne);
+           query.addWhereEqualTo("idTwo",idTwo);
+           query.findObjects(new FindListener<Friends>() {
+               @Override
+               public void done(List<Friends> list, BmobException e) {
+                   if(list!=null&&list.size()==1){
+                       friendId[0] = list.get(0).getObjectId();
+                   }
+               }
+           });
+
+        return friendId[0];
     }
 
     //查询订单是否没有订单纠纷，返回为true则可以解除好友关系，false则不能解除好友关系

@@ -56,32 +56,63 @@
         <!-- 全局变量 位置服务locationService -->
         <service android:name="com.amap.api.location.APSService" />
 
-        <activity android:name=".LocationActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name=".activities.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistActivity" />
-        <activity android:name=".FindBackActivity" />
-        <activity android:name=".putActivity" />
         <activity
-            android:name=".BindActivity"
-            android:exported="true" />
-        <activity android:name=".UpdateuserActivity" />
-        <activity android:name=".UpdateSingnatureActivity" />
-        <activity android:name=".bindphoneActivity" />
-        <activity android:name=".UnbindActivity" />
-        <activity android:name=".addressActivity" />
-        <activity android:name=".getLocationActivity" />
-        <activity android:name=".showAddressActivity" />
+            android:name=".activities.RegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FindBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.putActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BindActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UpdateuserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UpdateSingnatureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.bindphoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UnbindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.addressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.getLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.showAddressActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
         　
+
 
         <!--
          ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -125,10 +156,15 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/photo_provider"></meta-data>
+                android:resource="@xml/photo_provider" />
         </provider>
 
-        <activity android:name=".ChatActivity"></activity>
+        <activity
+            android:name=".activities.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.myOwnOrderActivity" />
+        <activity android:name=".activities.feedbackActivity" />
+        <activity android:name=".activities.identifyActivity"></activity>
     </application>
 
 </manifest>

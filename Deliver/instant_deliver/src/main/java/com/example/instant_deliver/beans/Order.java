@@ -13,13 +13,13 @@ public class Order extends BmobObject {
     //发起人名称
     private String receviername;
     //发起人
-    private _User launcher;
+    private String launcher;
     //发起人头像
     private String launcherhead;
     //发起人学校
     private String school;
     //接单人
-    private _User reciver;
+    private String reciver;
     //订单类型
     private String orderType;
     //订单状态：1：未接单、2：接单中、3：订单完成、4：取消订单、/*5：订单失效（该状态不需要，只需不显示即可）*/
@@ -36,22 +36,9 @@ public class Order extends BmobObject {
     private Integer award;
     //手机号
     private String phonenum;
+    //地址id
+    private String adsObject;
 
-    public _User getLauncher() {
-        return launcher;
-    }
-
-    public void setLauncher(_User launcher) {
-        this.launcher = launcher;
-    }
-
-    public _User getReciver() {
-        return reciver;
-    }
-
-    public void setReciver(_User reciver) {
-        this.reciver = reciver;
-    }
 
     public String getOrderType() {
         return orderType;
@@ -147,5 +134,29 @@ public class Order extends BmobObject {
 
     public void setReceviername(String receviername) {
         this.receviername = receviername;
+    }
+
+    public String getLauncher() {
+        return launcher;
+    }
+
+    public void setLauncher(String launcher) {
+        this.launcher = launcher;
+    }
+
+    public String getReciver() {
+        return reciver;
+    }
+
+    public void setReciver(String reciver) {
+        this.reciver = reciver;
+    }
+
+    public String getAdsObject() {
+        return adsObject;
+    }
+
+    public void setAdsObject(String adsObject) {
+        this.adsObject = adsObject;
     }
 }

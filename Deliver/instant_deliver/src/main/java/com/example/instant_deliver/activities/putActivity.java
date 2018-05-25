@@ -40,6 +40,7 @@ public class putActivity extends Activity implements View.OnClickListener {
     private TextView address;
     private Button submit;
     private _User users;
+    private myAddress ads;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +70,7 @@ public class putActivity extends Activity implements View.OnClickListener {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 20 && resultCode == 30) {
             //返回地址
-            myAddress ads = (myAddress) data.getSerializableExtra("address");
+            ads = (myAddress) data.getSerializableExtra("address");
             address.setText(ads.getAddress());
         }
     }
@@ -156,7 +157,7 @@ public class putActivity extends Activity implements View.OnClickListener {
         //当前系统时间
         Date date = new Date();
         //当前用户为发起者
-        order.setLauncher(users);
+        order.setLauncher(users.getObjectId());
         order.setLaunchername(users.getUsername());
         order.setReciver(null);
         order.setOrderType((String) spinner.getSelectedItem());
@@ -167,6 +168,7 @@ public class putActivity extends Activity implements View.OnClickListener {
         order.setAward(changeaward((String) awardSpinner.getSelectedItem()));
         order.setPhonenum(phone.getText().toString());
         order.setSchool(users.getUniversity());
+        order.setAdsObject(ads.getObjectId());
         //设置发布时间
         order.setPutDate(new BmobDate(date));
         //设置截止时间

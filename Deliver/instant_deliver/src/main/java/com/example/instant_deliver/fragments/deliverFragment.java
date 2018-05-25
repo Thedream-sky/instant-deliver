@@ -21,8 +21,9 @@ import com.example.instant_deliver.beans.Order;
 import com.example.instant_deliver.beans._User;
 import com.example.instant_deliver.tools.ListviewForScrollView;
 import com.example.instant_deliver.tools.getConnState;
-import com.example.instant_deliver.tools.orderAdapter;
+import com.example.instant_deliver.adapters.orderAdapter;
 import com.example.instant_deliver.tools.orderListTool;
+import com.example.instant_deliver.tools.orderTool;
 import com.example.instant_deliver.tools.usersManager;
 import com.handmark.pulltorefresh.library.ILoadingLayout;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
@@ -73,6 +74,13 @@ public class deliverFragment extends Fragment {
                     Toast.makeText(getActivity().getApplication(), "当前网络不可用", Toast.LENGTH_SHORT).show();
                 }
             }
+
+            if(msg.what==3){
+                if(!(msg.obj.toString()==null)){
+                    orderTool.opengaode(msg.obj.toString(),getActivity());
+                }
+            }
+
             //页面加载
             if (msg.what == 1) {
                 _User users = BmobUser.getCurrentUser(_User.class);
@@ -148,13 +156,12 @@ public class deliverFragment extends Fragment {
         Order order1 = new Order();
         //判断是否发出与抢单人是否为同一人
         if (order.getLauncher()
-                .getObjectId()
                 .equals(reciver.getObjectId())) {
             Toast.makeText(getActivity().getApplication(), "不能接自己发出的单", Toast.LENGTH_LONG).show();
         } else if (order.getOrderState() == 1) {
             //状态设置为接单中
             order1.setOrderState(2);
-            order1.setReciver(reciver);
+            order1.setReciver(reciver.getObjectId());
             order1.setReceviername(reciver.getUsername());
             //更新订单信息
             order1.update(order.getObjectId(), new UpdateListener() {
@@ -162,9 +169,9 @@ public class deliverFragment extends Fragment {
                 public void done(BmobException e) {
                     if (e == null) {
                         //添加好友
-                        usersManager.addFriend(reciver.getObjectId(),order.getLauncher().getObjectId());
+                        usersManager.addFriend(reciver.getObjectId(),order.getLauncher());
                         //保存订单好友关系表
-                        orderListTool.saveState(getActivity(),reciver.getObjectId(),order.getLauncher().getObjectId(),order.getObjectId());
+                        orderListTool.saveState(getActivity(),reciver.getObjectId(),order.getLauncher(),order.getObjectId());
                         totallist.remove(pos);
                         adapter.notifyDataSetChanged();
                         Toast.makeText(getActivity().getApplication(), "抢单成功！！！", Toast.LENGTH_SHORT).show();
@@ -262,6 +269,14 @@ public class deliverFragment extends Fragment {
                     }
                 });
                 alertDialog.show();
+            }
+
+            @Override
+            public void AddressClick(View view) {
+                Message message =new Message();
+                message.what = 3;
+                message.obj = view.getTag();
+                handler.sendMessage(message);
             }
         };
     }

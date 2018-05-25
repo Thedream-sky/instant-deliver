@@ -4,11 +4,65 @@
     android:layout_height="match_parent"
     tools:context="com.example.instant_deliver.fragments.contantFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:gravity="center"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="fragment3" />
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/deepskyblue"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="好友"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <!--下拉刷新-->
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/contant_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/search_friend"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/search_person"
+                        android:drawableLeft="@drawable/searching"
+                        android:drawablePadding="30dp"
+                        android:focusable="false"
+                        android:hint="搜索"
+                        android:paddingLeft="5dp"
+                        android:textColorHint="#ffffff" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.example.instant_deliver.tools.ListviewForScrollView
+                        android:id="@+id/contant_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </com.example.instant_deliver.tools.ListviewForScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </LinearLayout>
 </FrameLayout>

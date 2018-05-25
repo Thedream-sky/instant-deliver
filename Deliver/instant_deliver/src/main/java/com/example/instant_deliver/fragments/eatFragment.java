@@ -3,11 +3,14 @@ package com.example.instant_deliver.fragments;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,10 +22,13 @@ import android.widget.Toast;
 import com.example.instant_deliver.R;
 import com.example.instant_deliver.beans.Order;
 import com.example.instant_deliver.beans._User;
+import com.example.instant_deliver.beans.myAddress;
+import com.example.instant_deliver.tools.GaodeMaptools;
 import com.example.instant_deliver.tools.ListviewForScrollView;
 import com.example.instant_deliver.tools.getConnState;
-import com.example.instant_deliver.tools.orderAdapter;
+import com.example.instant_deliver.adapters.orderAdapter;
 import com.example.instant_deliver.tools.orderListTool;
+import com.example.instant_deliver.tools.orderTool;
 import com.example.instant_deliver.tools.usersManager;
 import com.handmark.pulltorefresh.library.ILoadingLayout;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
@@ -78,6 +84,14 @@ public class eatFragment extends Fragment {
                     Toast.makeText(getActivity().getApplication(), "当前网络不可用", Toast.LENGTH_SHORT).show();
                 }
             }
+
+            if(msg.what==3){
+                if(!(msg.obj.toString()==null)){
+                    orderTool.opengaode(msg.obj.toString(),getActivity());
+                }
+            }
+
+
             //查询数据
             if (msg.what == 1) {
                 _User users = BmobUser.getCurrentUser(_User.class);
@@ -155,14 +169,13 @@ public class eatFragment extends Fragment {
 
         //判断是否发出与抢单人是否为同一人
         if (order.getLauncher()
-                .getObjectId()
                 .equals(reciver.getObjectId())) {
             Toast.makeText(getActivity().getApplication(), "不能接自己发出的单", Toast.LENGTH_LONG).show();
         } else if (order.getOrderState() == 1) {
 
             //状态设置为接单中
             order1.setOrderState(2);
-            order1.setReciver(reciver);
+            order1.setReciver(reciver.getObjectId());
             order1.setReceviername(reciver.getUsername());
             //更新订单信息
             order1.update(order.getObjectId(), new UpdateListener() {
@@ -170,9 +183,9 @@ public class eatFragment extends Fragment {
                 public void done(BmobException e) {
                     if (e == null) {
                         //添加好友
-                        usersManager.addFriend(reciver.getObjectId(),order.getLauncher().getObjectId());
+                        usersManager.addFriend(reciver.getObjectId(),order.getLauncher());
                         //保存订单好友关系表
-                        orderListTool.saveState(getActivity(),reciver.getObjectId(),order.getLauncher().getObjectId(),order.getObjectId());
+                        orderListTool.saveState(getActivity(),reciver.getObjectId(),order.getLauncher(),order.getObjectId());
                         totallist.remove(pos);
                         adapter.notifyDataSetChanged();
                         Toast.makeText(getActivity().getApplication(), "抢单成功！！！", Toast.LENGTH_SHORT).show();
@@ -275,6 +288,14 @@ public class eatFragment extends Fragment {
                 });
                 alertDialog.show();
             }
+
+            @Override
+            public void AddressClick(View view) {
+                Message message =new Message();
+                message.what = 3;
+                message.obj = view.getTag();
+                handler.sendMessage(message);
+            }
         };
     }
 
@@ -321,50 +342,7 @@ public class eatFragment extends Fragment {
             }
         });
 
-
-/*
-
-      //listview的滑动监听
-        mylistView.setOnScrollListener(new AbsListView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(AbsListView view, int scrollState) {
-                switch (scrollState){
-                    //静止状态
-                    case AbsListView.OnScrollListener.SCROLL_STATE_IDLE:
-                       //当不再滑动时仅加载可见的item的图片
-                       // handler.sendEmptyMessageDelayed(2,500);
-                        ;break;
-                    //手指不动了，但是屏幕还在滚动状态
-                    case AbsListView.OnScrollListener.SCROLL_STATE_FLING:
-                        ;break;
-                    //手指滚动状态
-                    case AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL:
-                        ;break;
-                }
-            }
-
-            @Override
-            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-                //所能见到的第一条item的位置
-                start_index = firstVisibleItem;
-                //所能见到的最后一条item的位置
-                end_index = firstVisibleItem + visibleItemCount;
-            }
-        });
-*/
-
     }
 
-
-
-
- /*   //异步加载图片
-   private void loadimageAsyn(){
-       for (int i=start_index;i<=end_index;i++){
-           ImageViewPlus img= (ImageViewPlus) mylistView.findViewWithTag(i);
-           String imgurl=totallist.get(i).getLauncherhead();
-           loadImage.loadImageVolley(getActivity().getApplication(),imgurl,img);
-       }
-    }*/
 
 }

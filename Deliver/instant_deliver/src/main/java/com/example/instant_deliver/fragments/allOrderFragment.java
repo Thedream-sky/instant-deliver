@@ -1,0 +1,112 @@
+package com.example.instant_deliver.fragments;
+
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ScrollView;
+
+import com.example.instant_deliver.R;
+import com.example.instant_deliver.adapters.orderManageAdapter;
+import com.example.instant_deliver.services.myApplication;
+import com.example.instant_deliver.tools.ListviewForScrollView;
+import com.example.instant_deliver.tools.orderManager;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
+
+public class allOrderFragment extends Fragment {
+    private PullToRefreshScrollView pullToRefreshScrollView;
+    private ListviewForScrollView listviewForScrollView;
+    private View view;
+    private String userid;
+    private orderManageAdapter.CallBack callBack;
+    private String flag;
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            if(msg.what==1){
+                //获取数据
+                orderManager.refreshData(getActivity().getApplicationContext(),callBack,flag,userid,listviewForScrollView,"",pullToRefreshScrollView);
+            }
+        }
+    };
+
+
+
+    public allOrderFragment() {
+    }
+    public allOrderFragment(String flag) {
+        this.flag = flag;
+    }
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        if(view==null){
+            view = inflater.inflate(R.layout.fragment_all_order, container, false);
+        }
+
+        init();
+        listener();
+
+
+        return view;
+    }
+
+    private void init(){
+        pullToRefreshScrollView = (PullToRefreshScrollView) view.findViewById(R.id.all_order_scrollView);
+        listviewForScrollView = (ListviewForScrollView) view.findViewById(R.id.all_order_listView);
+        userid = new myApplication().getCurrentUser().getObjectId();
+
+        callBack = new orderManageAdapter.CallBack(){
+            @Override
+            public void deleteOrder(View view) {
+
+            }
+
+            @Override
+            public void cancelOrder(View view) {
+
+            }
+        };
+        //获取数据
+        getdata();
+    }
+
+    private void listener(){
+        //手动把ScrollView滚动至最顶端
+        pullToRefreshScrollView.smoothScrollTo(0, 0);
+        pullToRefreshScrollView.setMode(PullToRefreshBase.Mode.PULL_FROM_START);
+        pullToRefreshScrollView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ScrollView>() {
+            @Override
+            public void onPullDownToRefresh(PullToRefreshBase<ScrollView> refreshView) {
+                getdata();
+            }
+
+            @Override
+            public void onPullUpToRefresh(PullToRefreshBase<ScrollView> refreshView) {
+
+            }
+        });
+
+    }
+    //获取数据
+    private void getdata(){
+        handler.sendEmptyMessageDelayed(1, 200);
+    }
+
+
+}

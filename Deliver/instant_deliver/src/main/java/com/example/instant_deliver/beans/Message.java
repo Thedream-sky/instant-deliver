@@ -9,8 +9,9 @@ import java.util.Date;
  */
 
 public class Message extends DataSupport {
-    //好友objectid
-    private String objectid;
+    private String uuid;
+    //好友friendId
+    private String friendId;
     //当前用户id
     private String ownid;
     //好友名称
@@ -23,6 +24,8 @@ public class Message extends DataSupport {
     private Date date;
     //是否显示的状态
     private String state;
+    //未读消息数
+    private Integer count;
 
     public String getFriendName() {
         return friendName;
@@ -56,14 +59,6 @@ public class Message extends DataSupport {
         this.state = state;
     }
 
-    public String getObjectid() {
-        return objectid;
-    }
-
-    public void setObjectid(String objectid) {
-        this.objectid = objectid;
-    }
-
     public Date getDate() {
         return date;
     }
@@ -78,5 +73,30 @@ public class Message extends DataSupport {
 
     public void setOwnid(String ownid) {
         this.ownid = ownid;
+    }
+
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
+    public String getFriendId() {
+        return friendId;
+    }
+
+    public void setFriendId(String friendId) {
+        this.friendId = friendId;
+    }
+
+    public String getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
     }
 }

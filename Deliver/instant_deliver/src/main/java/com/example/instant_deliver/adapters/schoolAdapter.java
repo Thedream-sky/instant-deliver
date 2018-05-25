@@ -59,6 +59,5 @@ public class schoolAdapter extends BaseAdapter{
     //内部类
     class Viewholder{
         private TextView textView;
-
     }
 }

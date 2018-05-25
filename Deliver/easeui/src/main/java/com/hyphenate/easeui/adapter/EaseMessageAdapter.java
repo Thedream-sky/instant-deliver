@@ -91,6 +91,28 @@ public class EaseMessageAdapter extends BaseAdapter{
 		this.conversation = EMClient.getInstance().chatManager().getConversation(username, EaseCommonUtils.getConversationType(chatType), true);
 	}
 
+	/**
+	 * author  wangyinghui creat on 2018/4/17 reload
+	 * @param context
+	 * @param username
+	 * @param chatType
+	 * @param listView
+	 * @param showUserNick
+	 * @param showAvatar
+	 * @param myBubbleBg
+     * @param otherBuddleBg
+     */
+	public EaseMessageAdapter(Context context, String username, int chatType, ListView listView, boolean showUserNick, boolean showAvatar, Drawable myBubbleBg, Drawable otherBuddleBg) {
+		this.context = context;
+		this.listView = listView;
+		toChatUsername = username;
+		this.showAvatar = showAvatar;
+		this.showUserNick = showUserNick;
+		this.myBubbleBg = myBubbleBg;
+		this.otherBuddleBg = otherBuddleBg;
+		this.conversation = EMClient.getInstance().chatManager().getConversation(username, EaseCommonUtils.getConversationType(chatType), true);
+	}
+
 	Handler handler = new Handler() {
 		private void refreshList() {
 			// you should not call getAllMessages() in UI thread

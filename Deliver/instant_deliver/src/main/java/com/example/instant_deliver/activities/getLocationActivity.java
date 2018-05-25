@@ -273,6 +273,8 @@ public class getLocationActivity extends Activity implements View.OnClickListene
             myaddress.setName(name);
             myaddress.setAddress(ads + adtails);
             myaddress.setUsers(currency);
+            myaddress.setLat(lat);
+            myaddress.setLon(lon);
             //保存地址
             myaddress.save(new SaveListener<String>() {
                 @Override

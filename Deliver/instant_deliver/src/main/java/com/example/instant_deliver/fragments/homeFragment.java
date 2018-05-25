@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.astuetz.PagerSlidingTabStrip;
 import com.example.instant_deliver.R;
 import com.example.instant_deliver.beans._User;
-import com.example.instant_deliver.tools.MyPagerAdapter;
+import com.example.instant_deliver.adapters.MyPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

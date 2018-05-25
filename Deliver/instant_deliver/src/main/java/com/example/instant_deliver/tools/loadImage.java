@@ -3,9 +3,7 @@ package com.example.instant_deliver.tools;
 import android.content.Context;
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
-import com.example.instant_deliver.MainActivity;
 import com.example.instant_deliver.R;
-import com.example.instant_deliver.identifyView.ImageViewPlus;
 
 /**
  * Created by King on 2017/5/30.

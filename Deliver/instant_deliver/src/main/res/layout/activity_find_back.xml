@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.instant_deliver.FindBackActivity">
+    tools:context="com.example.instant_deliver.activities.FindBackActivity">
 
     <com.example.instant_deliver.identifyView.Topbar
         android:layout_marginLeft="10dp"
